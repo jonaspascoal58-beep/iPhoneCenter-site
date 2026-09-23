@@ -5201,3 +5201,325 @@ section,
 /* =========================================================
    FIM DOS AJUSTES DE RESPONSIVIDADE
    ========================================================= */
+
+/* =========================================================
+   IPHONE CENTER — ACABAMENTO PREMIUM DOS PRODUTOS
+   ========================================================= */
+
+/* Cartões */
+#produtos .product-card {
+  position: relative;
+  border: 1px solid #e8e8ed !important;
+  border-radius: 18px !important;
+  background: #fff !important;
+  overflow: hidden;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, .035);
+  transition: transform .22s ease, box-shadow .22s ease,
+              border-color .22s ease;
+}
+
+#produtos .product-card:hover {
+  transform: translateY(-4px);
+  border-color: #d5d5dc !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .085);
+}
+
+/* Galeria */
+#produtos .product-gallery {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  box-sizing: border-box;
+  background: linear-gradient(145deg, #fafafa, #f1f1f5);
+}
+
+#produtos .gallery-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+#produtos .gallery-main-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 230px;
+  object-fit: contain;
+  transition: transform .25s ease;
+}
+
+#produtos .product-card:hover .gallery-main-image {
+  transform: scale(1.035);
+}
+
+/* Miniaturas */
+#produtos .gallery-thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+#produtos .gallery-thumb {
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  padding: 3px;
+  border: 1px solid #e1e1e6;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#produtos .gallery-thumb.active {
+  border: 2px solid #222;
+}
+
+#produtos .gallery-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Informações */
+#produtos .product-card .product-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 18px !important;
+  gap: 9px;
+}
+
+#produtos .product-card .product-info h3 {
+  margin: 0;
+  color: #171717;
+  font-size: 20px;
+  font-weight: 750;
+  line-height: 1.25;
+  letter-spacing: -.45px;
+}
+
+#produtos .product-card .product-description {
+  margin: 0;
+  color: #68686f;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+#produtos .product-card .selected-storage {
+  margin: 0;
+  color: #666;
+  font-size: 12px;
+}
+
+#produtos .product-card .selected-price {
+  display: block;
+  margin: 2px 0;
+  color: #111;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -.5px;
+}
+
+#produtos .product-card .product-info > small {
+  color: #26834a;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Cores e armazenamento */
+#produtos .colors-toggle,
+#produtos .color-option,
+#produtos .storage-option {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .18s ease, border-color .18s ease;
+}
+
+#produtos .color-option,
+#produtos .storage-option {
+  border: 1px solid #dedee4;
+  background: #fff;
+}
+
+#produtos .color-option:hover,
+#produtos .storage-option:hover {
+  border-color: #777;
+}
+
+#produtos .storage-option.active,
+#produtos .color-option.active {
+  border-color: #222;
+  background: #f2f2f5;
+  color: #111;
+}
+
+/* Botões de ação */
+#produtos .product-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+#produtos .product-actions .product-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 46px;
+  padding: 11px 12px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  box-sizing: border-box;
+  transition: transform .18s ease, box-shadow .18s ease,
+              background .18s ease;
+}
+
+#produtos .product-actions .cart-button {
+  background: #171717;
+  border: 1px solid #171717;
+  color: #fff;
+}
+
+#produtos .product-actions .cart-button:hover {
+  background: #333;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, .14);
+}
+
+#produtos .product-actions .whatsapp-button {
+  border: 1px solid #20bd5a;
+  border-radius: 10px;
+  background: #20bd5a;
+  color: #fff;
+}
+
+#produtos .product-actions .product-button:hover {
+  transform: translateY(-1px);
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 999px) {
+  #produtos .gallery-main-image {
+    height: 210px;
+  }
+
+  #produtos .product-card .product-info {
+    padding: 15px !important;
+  }
+
+  #produtos .product-card .product-info h3 {
+    font-size: 18px;
+  }
+
+  #produtos .product-card .selected-price {
+    font-size: 22px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  #produtos .product-card {
+    border-radius: 13px !important;
+  }
+
+  #produtos .product-gallery {
+    padding: 7px;
+  }
+
+  #produtos .gallery-main-image {
+    height: 155px;
+  }
+
+  #produtos .gallery-thumbs {
+    gap: 4px;
+    margin-top: 7px;
+  }
+
+  #produtos .gallery-thumb {
+    flex-basis: 32px;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+  }
+
+  #produtos .product-card .product-info {
+    padding: 11px !important;
+    gap: 7px;
+  }
+
+  #produtos .product-card .product-info h3 {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  #produtos .product-card .product-description {
+    font-size: 11px;
+  }
+
+  #produtos .product-card .selected-price {
+    font-size: 19px;
+  }
+
+  #produtos .product-actions {
+    gap: 7px;
+    padding-top: 8px;
+  }
+
+  #produtos .product-actions .product-button {
+    min-height: 42px;
+    padding: 9px 7px;
+    font-size: 11px;
+    border-radius: 8px;
+  }
+}
+
+/* Celulares muito estreitos */
+@media (max-width: 360px) {
+  #produtos .gallery-main-image {
+    height: 130px;
+  }
+
+  #produtos .product-card .product-info {
+    padding: 9px !important;
+  }
+
+  #produtos .product-card .product-info h3 {
+    font-size: 14px;
+  }
+
+  #produtos .product-card .selected-price {
+    font-size: 17px;
+  }
+
+  #produtos .product-actions .product-button {
+    font-size: 10px;
+  }
+}
+
+/* Acessibilidade: reduzir animações se solicitado */
+@media (prefers-reduced-motion: reduce) {
+  #produtos .product-card,
+  #produtos .product-card *,
+  #produtos .product-card *::before,
+  #produtos .product-card *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* =========================================================
+   FIM — ACABAMENTO PREMIUM DOS PRODUTOS
+   ========================================================= */
