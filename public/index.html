@@ -161,24 +161,43 @@
 <section class="benefits-bar">
 
   <div class="benefit">
-    <strong>Produtos selecionados</strong>
-    <span>Confira os modelos disponíveis</span>
+    <div class="benefit-icon">✓</div>
+    <div class="benefit-text">
+      <strong>Produtos selecionados</strong>
+      <span>Confira os modelos disponíveis</span>
+    </div>
   </div>
 
   <div class="benefit">
-    <strong>Atendimento personalizado</strong>
-    <span>Fale diretamente com nossa equipe</span>
+    <div class="benefit-icon">◌</div>
+    <div class="benefit-text">
+      <strong>Atendimento personalizado</strong>
+      <span>Fale diretamente com nossa equipe</span>
+    </div>
   </div>
 
   <div class="benefit">
-    <strong>Pagamento facilitado</strong>
-    <span>Consulte nossas condições</span>
+    <div class="benefit-icon">▣</div>
+    <div class="benefit-text">
+      <strong>Pagamento facilitado</strong>
+      <span>Consulte nossas condições</span>
+    </div>
   </div>
 
-  <div class="benefit">
-    <strong>WhatsApp</strong>
-    <span>Atendimento rápido e direto</span>
-  </div>
+  <a
+    class="benefit benefit-whatsapp"
+    href="https://wa.me/5511951507876?text=Olá!%20Vim%20pelo%20site%20iPhoneCenter%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20iPhones."
+    target="_blank"
+    rel="noopener"
+    aria-label="Falar com a iPhoneCenter pelo WhatsApp"
+  >
+    <div class="benefit-icon">◉</div>
+    <div class="benefit-text">
+      <strong>Falar no WhatsApp</strong>
+      <span>Atendimento rápido e direto</span>
+    </div>
+    <div class="benefit-arrow">→</div>
+  </a>
 
 </section>
 
@@ -1797,7 +1816,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const matches = window.products
       .map((product, index) => ({ product, index }))
-      .filter(({ product }) => (product.name || "").toLowerCase().includes(query))
+      .filter(({ product }) => {
+        const text = [
+          product.name || "",
+          product.description || "",
+          product.status || "",
+          ...(Array.isArray(product.colors) ? product.colors : []),
+          ...(Array.isArray(product.storages)
+            ? product.storages.map(item => item.storage || "")
+            : [])
+        ].join(" ").toLowerCase();
+
+        return text.includes(query);
+      })
 
     if (!matches.length) {
       preview.innerHTML = '<div class="search-preview-empty">Nenhum produto encontrado.</div>';
@@ -1896,11 +1927,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".header-search");
-  const input = form?.querySelector("input");
   const header = document.querySelector(".header-main");
   const preview = form?.querySelector(".search-preview");
 
-  if (!form || !input || !header || !preview) return;
+  if (!form || !header || !preview) return;
 
   header.style.position = "relative";
   header.appendChild(preview);
@@ -1913,42 +1943,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   positionPreview();
   window.addEventListener("resize", positionPreview);
-
-  function goToProduct() {
-    const query = input.value.trim().toLowerCase();
-    if (!query || !Array.isArray(window.products)) return;
-
-    const foundIndex = window.products.findIndex(product =>
-      (product.name || "").toLowerCase().includes(query)
-    );
-
-    if (foundIndex < 0) return;
-
-    document.querySelectorAll("#produtos .product-card").forEach(card => {
-      card.style.display = "";
-    });
-
-    const target = document.querySelector(
-      '#produtos .product-card[data-product-index="' + foundIndex + '"]'
-    );
-
-    if (target) {
-      preview.hidden = true;
-      target.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  }
-
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    goToProduct();
-  });
-
-  input.addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      goToProduct();
-    }
-  });
 });
 </script>
 
