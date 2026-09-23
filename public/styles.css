@@ -7438,3 +7438,107 @@ body.product-viewer-open {
     right: 10px !important;
   }
 }
+
+/* =========================================================
+   CORREÇÃO DEFINITIVA — ÍCONES DO CARROSSEL DE BENEFÍCIOS
+   ========================================================= */
+
+/* Remove os desenhos antigos gerados por pseudo-elementos */
+.benefit-icon::before,
+.benefit-icon::after {
+  content: none !important;
+}
+
+/* Todos os ícones */
+.benefit-icon {
+  position: relative !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 0 !important;
+}
+
+/* WhatsApp — primeiro item */
+.benefit-whatsapp .benefit-icon {
+  background: #25D366 !important;
+  color: #fff !important;
+}
+
+.benefit-whatsapp .benefit-icon .whatsapp-icon {
+  display: block !important;
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+  margin: 0 !important;
+  color: #fff !important;
+}
+
+/* Produtos selecionados — segundo item */
+.benefit:nth-child(2) .benefit-icon {
+  background: #f1f5ff !important;
+  color: #3478f6 !important;
+  font-size: 18px !important;
+}
+
+.benefit:nth-child(2) .benefit-icon::before {
+  content: "✓" !important;
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  border: 0 !important;
+  transform: none !important;
+}
+
+/* Atendimento personalizado — terceiro item */
+.benefit:nth-child(3) .benefit-icon {
+  background: #f5f2ff !important;
+  color: #7357d9 !important;
+}
+
+.benefit:nth-child(3) .benefit-icon::before {
+  content: "" !important;
+  position: absolute !important;
+  width: 9px !important;
+  height: 9px !important;
+  border: 2px solid currentColor !important;
+  border-radius: 50% !important;
+  top: 7px !important;
+}
+
+.benefit:nth-child(3) .benefit-icon::after {
+  content: "" !important;
+  position: absolute !important;
+  width: 17px !important;
+  height: 9px !important;
+  border: 2px solid currentColor !important;
+  border-bottom: 0 !important;
+  border-radius: 12px 12px 0 0 !important;
+  bottom: 6px !important;
+}
+
+/* Pagamento facilitado — quarto item */
+.benefit:nth-child(4) .benefit-icon {
+  background: #fff7ed !important;
+  color: #e58a24 !important;
+}
+
+.benefit:nth-child(4) .benefit-icon::before {
+  content: "" !important;
+  position: absolute !important;
+  width: 19px !important;
+  height: 13px !important;
+  border: 2px solid currentColor !important;
+  border-radius: 3px !important;
+  top: 11px !important;
+}
+
+.benefit:nth-child(4) .benefit-icon::after {
+  content: "" !important;
+  position: absolute !important;
+  width: 19px !important;
+  height: 2px !important;
+  background: currentColor !important;
+  top: 15px !important;
+}
