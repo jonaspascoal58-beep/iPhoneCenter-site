@@ -1,0 +1,6 @@
+nohup: ignoring input
+
+> iphonecenter@1.0.0 start
+> node server.js
+
+iPhoneCenter rodando em http://localhost:3000

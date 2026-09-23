@@ -1,0 +1,34 @@
+window.products = [
+  {
+    name: "iPhone 15",
+    storage: "128 GB",
+    price: "R$ 2.899,99",
+    image: "/assets/products/iphone15.png"
+  },
+  {
+    name: "iPhone 15",
+    storage: "256 GB",
+    price: "R$ 3.199,99",
+    image: "/assets/products/iphone15-256.png"
+  },
+  {
+    name: "iPhone 15 Pro",
+    storage: "128 GB",
+    price: "R$ 3.499,99",
+    image: "/assets/products/iphone15pro.png"
+  },
+  {
+    name: "iPhone 16",
+    storage: "128 GB",
+    price: "R$ 4.199,99",
+    image: "/assets/products/iphone16.png"
+  },
+  {
+    name: "iPhone 16 Pro",
+    storage: "128 GB",
+    price: "R$ 4.999,99",
+    image: "/assets/products/iphone16.png"
+  }
+];
+
+console.log("iPhoneCenter: catálogo carregado:", window.products.length, "produtos");

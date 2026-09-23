@@ -1,0 +1,177 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#050608;color:#f6f7f9;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;border-bottom:1px solid #1a1c21;background:rgba(5,6,8,.88);backdrop-filter:blur(14px);position:sticky;top:0;z-index:10}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px}.brand img{width:38px;height:38px;object-fit:cover;border-radius:9px}.brand span span{font-weight:400}.nav nav{display:flex;align-items:center;gap:26px;color:#b8bdc8;font-size:14px}.nav-cta{padding:10px 15px;border:1px solid #30343d;border-radius:999px;color:#fff}.hero{min-height:680px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:5vw;padding:70px 8vw;background:radial-gradient(circle at 78% 45%,#10264b 0,#08101f 22%,#050608 55%)}.eyebrow{letter-spacing:.22em;font-size:11px;color:#5fb8ff;font-weight:800;margin-bottom:14px}.hero h1{font-size:clamp(44px,6vw,78px);line-height:.98;letter-spacing:-.055em;max-width:720px;margin:0 0 24px}.hero p{font-size:19px;color:#aeb4c0;max-width:600px}.actions{display:flex;gap:12px;margin:30px 0}.button{border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:12px;font-weight:800;font-size:14px}.primary{background:#fff;color:#07090c}.ghost{background:transparent;color:#fff;border:1px solid #30343d}.full{width:100%}.trust{display:flex;flex-wrap:wrap;gap:18px;color:#777f8d;font-size:12px}.hero-art{display:flex;justify-content:center}.hero-art img{width:min(520px,100%);aspect-ratio:1;object-fit:cover;border-radius:34px;box-shadow:0 30px 100px #000;transform:rotate(1deg)}.section{padding:100px 8vw}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:40px}.section-head h1,.section-head h2,.form-intro h2{font-size:clamp(34px,4vw,56px);line-height:1;letter-spacing:-.04em;margin:0}.section-head p,.form-intro>p{color:#9299a6;max-width:470px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:30px;min-height:270px;border:1px solid #20232a;border-radius:22px;background:linear-gradient(145deg,#0c0e12,#07080a)}.card h3{font-size:24px;margin:22px 0 8px}.card p{color:#858c99}.phone{height:80px;width:54px;border:2px solid #4d5665;border-radius:13px;display:flex;align-items:end;justify-content:center;padding-bottom:8px;color:#5fb8ff;font-size:10px}.dark-section{padding:100px 8vw;display:grid;grid-template-columns:1fr 1fr;gap:60px;background:#0b0d11;border-block:1px solid #1b1e24}.dark-section h2{font-size:clamp(32px,4vw,54px);line-height:1.02;letter-spacing:-.04em;margin:0}.dark-section p{color:#9ca3af;font-size:18px;max-width:520px}.form-section{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.privacy-note{margin-top:35px;border:1px solid #20242b;border-radius:18px;padding:18px;background:#090b0e}.privacy-note p{color:#8f96a3;font-size:13px;margin-bottom:0}.form{display:grid;gap:16px}label{display:grid;gap:7px;font-size:13px;color:#c5cad3}input,select,textarea{width:100%;border:1px solid #292e37;background:#0a0c10;color:#fff;border-radius:12px;padding:13px 14px;outline:none;font:inherit}input:focus,select:focus,textarea:focus{border-color:#5fb8ff}.check{grid-template-columns:auto 1fr;align-items:start;gap:10px;color:#9299a6;font-size:12px}.check input{width:17px;height:17px}.check a{color:#fff;text-decoration:underline}.status{min-height:20px;color:#9299a6;font-size:13px}.success{color:#75e1a1}.error{color:#ff8585}footer{display:flex;justify-content:space-between;gap:30px;padding:35px 8vw;border-top:1px solid #1b1e24;color:#8c94a2;font-size:13px}footer strong{color:#fff}footer a{text-decoration:underline}.legal{max-width:850px;margin:0 auto;padding:70px 25px}.legal h1{font-size:50px;letter-spacing:-.04em}.legal h2{margin-top:40px}.legal p{color:#a5acb8}.admin-page{background:#080a0d}.admin-wrap{padding:60px 5vw}.table-wrap{overflow:auto;border:1px solid #22262e;border-radius:16px}table{width:100%;border-collapse:collapse;min-width:900px;background:#0b0d11}th,td{padding:13px;border-bottom:1px solid #20242b;text-align:left;font-size:12px;vertical-align:top}th{color:#aeb5c0;background:#0f1217;position:sticky;top:0}td{color:#d7dae0}@media(max-width:800px){.nav{padding:0 5vw}.nav nav a:not(.nav-cta){display:none}.hero,.form-section,.dark-section{grid-template-columns:1fr}.hero{padding:65px 6vw}.hero-art{margin-top:25px}.section{padding:70px 6vw}.cards{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:14px}.dark-section{padding:70px 6vw}footer{padding:30px 6vw;display:block}footer div+div{margin-top:12px}}
+
+/* =========================================================
+   iPhoneCenter — Catálogo
+   ========================================================= */
+
+#produtos .cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+#produtos .card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  min-height: 460px;
+  border: 1px solid #20242c;
+  border-radius: 26px;
+  background: linear-gradient(145deg, #101319, #080a0d);
+  box-shadow: 0 18px 45px rgba(0,0,0,.25);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+#produtos .card:hover {
+  transform: translateY(-6px);
+  border-color: #343a46;
+  box-shadow: 0 25px 60px rgba(0,0,0,.38);
+}
+
+#produtos .product-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 18px;
+  background: #f7f7f7;
+  border-radius: 20px;
+  padding: 14px;
+  transition: transform .25s ease;
+}
+
+#produtos .card:hover .product-image {
+  transform: scale(1.025);
+}
+
+#produtos .card h3 {
+  margin: 4px 0 5px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+#produtos .card p {
+  margin: 0 0 7px;
+  color: #9299a6;
+  font-size: 14px;
+}
+
+#produtos .card strong {
+  display: block;
+  margin: 5px 0 2px;
+  color: #22c55e;
+  font-size: 24px;
+  letter-spacing: -.5px;
+}
+
+#produtos .product-status {
+  display: block;
+  margin-bottom: 16px;
+  color: #aeb4c0;
+  font-size: 12px;
+}
+
+#produtos .card .button {
+  min-width: 125px;
+  margin: 4px;
+}
+
+@media (max-width: 650px) {
+  #produtos .cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  #produtos .card {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  #produtos .product-image {
+    height: 230px;
+  }
+}
+
+
+/* Catálogo: 2 produtos por linha */
+#produtos .cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 650px) {
+  #produtos .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  #produtos .card {
+    padding: 14px;
+  }
+
+  #produtos .product-image {
+    height: 175px;
+  }
+
+  #produtos .card h3 {
+    font-size: 17px;
+  }
+
+  #produtos .card strong {
+    font-size: 18px;
+  }
+
+  #produtos .card .button {
+    width: 100%;
+    min-width: 0;
+    margin: 4px 0;
+  }
+}
+
+
+/* Botão WhatsApp */
+#produtos .button.whatsapp-button {
+  background: #25D366;
+  border-color: #25D366;
+  color: #fff;
+  gap: 8px;
+}
+
+#produtos .button.whatsapp-button:hover {
+  background: #20bd5a;
+  border-color: #20bd5a;
+}
+
+#produtos .button.whatsapp-button .whatsapp-icon {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+
+#produtos a.whatsapp-button {
+  background: #25D366 !important;
+  border-color: #25D366 !important;
+  color: #ffffff !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+#produtos a.whatsapp-button .whatsapp-icon {
+  width: 18px !important;
+  height: 18px !important;
+  margin: 0 !important;
+  flex-shrink: 0;
+}
+
+#produtos a.whatsapp-button:hover {
+  background: #20bd5a !important;
+  border-color: #20bd5a !important;
+}
+

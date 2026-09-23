@@ -1,0 +1,591 @@
+window.products = [
+  {
+    "name": "iPhone X",
+    "image": "/assets/products/iphone16.png",
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 1.499,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 1.699,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone XR",
+    "image": "/assets/products/iphone16.png",
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 1.599,99"
+      },
+      {
+        "storage": "128 GB",
+        "price": "R$ 1.799,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone XS",
+    "image": "/assets/products/iphone16.png",
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 1.699,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 1.999,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone XS Max",
+    "image": "/assets/products/iphone16.png",
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 1.899,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 2.199,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 11",
+    "image": "/assets/products/iphone-11/07-galeria-1.jpg",
+    "status": "Seminovo",
+    "gallery": [
+      "/assets/products/iphone-11/07-galeria-1.jpg",
+      "/assets/products/iphone-11/08-galeria-2.jpg",
+      "/assets/products/iphone-11/09-galeria-3.jpg",
+      "/assets/products/iphone-11/10-galeria-4.jpg",
+      "/assets/products/iphone-11/11-galeria-5.jpg",
+      "/assets/products/iphone-11/12-galeria-6.jpg",
+      "/assets/products/iphone-11/13-galeria-7.jpg"
+    ],
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 1.478,90"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 1.899,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 11 Pro",
+    "image": "/assets/products/iphone16.png",
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 1.999,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 2.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 11 Pro Max",
+    "image": "/assets/products/iphone16.png",
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 2.199,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 2.499,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 12 mini",
+    "image": "/assets/products/iphone16.png",
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 1.799,99"
+      },
+      {
+        "storage": "128 GB",
+        "price": "R$ 1.999,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 12",
+    "image": "/assets/products/iphone16.png",
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 1.899,99"
+      },
+      {
+        "storage": "128 GB",
+        "price": "R$ 2.099,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 2.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 12 Pro",
+    "image": "/assets/products/iphone16.png",
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 2.199,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 2.399,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 2.699,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 12 Pro Max",
+    "image": "/assets/products/iphone16.png",
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 2.499,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 2.699,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 2.999,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 13",
+    "image": "/assets/products/iphone15.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 3.299,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 3.699,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 13 mini",
+    "image": "/assets/products/iphone15.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 3.399,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 3.799,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 13 Pro",
+    "image": "/assets/products/iphone15pro.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.099,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 4.399,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 4.799,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 13 Pro Max",
+    "image": "/assets/products/iphone15pro.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.499,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 4.899,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 5.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 14",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 3.499,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 3.899,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 14 Plus",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 3.899,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 4.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 14 Pro",
+    "image": "/assets/products/iphone15pro.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.499,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 4.899,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 14 Pro Max",
+    "image": "/assets/products/iphone15pro.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.999,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 5.399,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 15",
+    "image": "/assets/products/iphone15.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.099,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 4.499,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 15 Plus",
+    "image": "/assets/products/iphone15.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.599,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 4.999,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 15 Pro",
+    "image": "/assets/products/iphone15pro.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 5.299,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 5.699,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 6.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 15 Pro Max",
+    "image": "/assets/products/iphone15pro.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 6.199,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 7.199,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 8.199,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 16",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.749,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 5.399,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 6.399,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 16 Plus",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 5.299,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 5.799,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 6.799,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 16 Pro",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 5.899,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 6.399,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 7.299,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 8.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 16 Pro Max",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 7.499,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 8.499,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 9.499,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 17e",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 5.999,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 17",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 8.299,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 9.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 17 Air",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 10.999,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 11.999,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 17 Pro",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 9.499,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 10.499,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 12.499,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 17 Pro Max",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 10.499,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 11.499,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 13.499,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 18 Pro",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 11.999,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 13.999,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 15.999,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 18 Pro Max",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 12.999,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 14.999,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 17.499,99"
+      },
+      {
+        "storage": "2 TB",
+        "price": "R$ 20.999,99"
+      }
+    ]
+  }
+];
+
+console.log(
+  "iPhoneCenter: catálogo agrupado:",
+  window.products.length,
+  "modelos"
+);

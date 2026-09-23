@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="iPhoneCenter — iPhones, atendimento personalizado e condições de pagamento.">
+  <title>iPhoneCenter | Seu próximo iPhone</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <div class="header-main">
+    <a href="/" class="site-logo">
+      <img src="/assets/logo.png" alt="iPhoneCenter">
+      <span>iPhone<span>Center</span></span>
+    </a>
+
+    <form class="header-search" action="#produtos">
+      <input type="search" placeholder="O que você está procurando?" aria-label="Pesquisar produtos">
+      <button type="submit">⌕</button>
+    </form>
+
+    <div class="header-actions">
+
+      <a href="#atendimento" class="header-action">
+        <span class="action-icon">?</span>
+        <span>
+          <small>Precisa de ajuda?</small>
+          <strong>Atendimento</strong>
+        </span>
+      </a>
+
+      <a href="#sobre" class="header-action">
+        <span class="action-icon">♙</span>
+        <span>
+          <small>Olá, cliente</small>
+          <strong>Minha conta</strong>
+        </span>
+      </a>
+
+      <a href="#cartPanel" class="header-cart" onclick="openCart(); return false;">
+        <span class="cart-icon">🛒</span>
+        <span>
+          <small>Seu carrinho</small>
+          <strong>Ver carrinho</strong>
+        </span>
+      </a>
+
+    </div>
+  </div>
+
+  <nav class="category-bar">
+
+    <a href="#produtos" class="category-all">
+      ☰ <strong>Todos os produtos</strong>
+    </a>
+
+    <a href="#produtos">iPhone</a>
+    <a href="#produtos">iPhone Pro</a>
+    <a href="#produtos">iPhone 11</a>
+    <a href="#produtos">iPhone 12</a>
+    <a href="#produtos">iPhone 13</a>
+    <a href="#destaques">Destaques</a>
+    <a href="#produtos" class="category-offer">Ofertas</a>
+
+  </nav>
+
+</header>
+
+
+
+<main>
+  <section class="home-banner-image">
+    <img src="/assets/banner-home.png" alt="iPhoneCenter — Seu próximo iPhone está aqui.">
+  </section>
+
+
+<section id="inicio" class="store-hero">
+
+  <div class="hero-content">
+
+    <span class="hero-label">IPHONECENTER</span>
+
+    <h1>
+      Seu próximo
+      <strong>iPhone.</strong>
+    </h1>
+
+    <p class="hero-subtitle">
+      Tecnologia, design e desempenho para acompanhar
+      você todos os dias.
+    </p>
+
+
+    <div class="hero-actions">
+
+      <a href="#produtos" class="primary-button">
+        Comprar iPhone
+      </a>
+
+      <a href="https://wa.me/5511951507876"
+         target="_blank"
+         rel="noopener"
+         class="secondary-button">
+        Falar com especialista
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="hero-product">
+
+    <div class="hero-label-floating">
+      NOVO
+    </div>
+
+    <div class="hero-glow"></div>
+
+    <img
+      src="/assets/products/hero-phone.png"
+      alt="iPhone 16"
+      class="hero-phone"
+    >
+
+  </div>
+
+</section>
+
+
+<section class="benefits-bar">
+
+  <div class="benefit">
+    <strong>Produtos selecionados</strong>
+    <span>Confira os modelos disponíveis</span>
+  </div>
+
+  <div class="benefit">
+    <strong>Atendimento personalizado</strong>
+    <span>Fale diretamente com nossa equipe</span>
+  </div>
+
+  <div class="benefit">
+    <strong>Pagamento facilitado</strong>
+    <span>Consulte nossas condições</span>
+  </div>
+
+  <div class="benefit">
+    <strong>WhatsApp</strong>
+    <span>Atendimento rápido e direto</span>
+  </div>
+
+</section>
+
+
+
+
+
+<section class="promo-banner">
+  <div class="promo-content">
+    <span class="promo-label">IPHONECENTER</span>
+    <h2>Seu próximo iPhone<br>está aqui.</h2>
+    <p>Modelos selecionados, atendimento personalizado e condições facilitadas.</p>
+    <a href="#produtos" class="promo-button">Ver iPhones</a>
+  </div>
+
+  <div class="promo-device">
+    <img src="/assets/products/iphone16.png" alt="iPhone em destaque">
+  </div>
+</section>
+
+<section class="offer-strip">
+  <div>
+    <span class="offer-strip-label">OFERTAS IPHONECENTER</span>
+    <h2>Escolha seu próximo iPhone.</h2>
+    <p>Consulte disponibilidade e condições diretamente pelo WhatsApp.</p>
+  </div>
+
+  <a href="#produtos" class="offer-strip-button">
+    Ver ofertas
+  </a>
+</section>
+
+<section id="destaques" class="featured-section">
+
+  <div class="section-heading">
+
+    <div>
+      <span>DESTAQUES</span>
+      <h2>Conheça nossos iPhones</h2>
+    </div>
+
+    <a href="#produtos" class="see-all">
+      Ver todos →
+    </a>
+
+  </div>
+
+  <div id="produtos">
+
+    <div class="cards"></div>
+
+  </div>
+
+</section>
+
+
+<section class="trust-section">
+
+  <div class="section-heading centered">
+    <span>IPHONECENTER</span>
+    <h2>Uma experiência simples para você</h2>
+    <p>
+      Atendimento direto, informações claras e facilidade
+      para encontrar o aparelho que procura.
+    </p>
+  </div>
+
+  <div class="trust-grid">
+
+    <div class="trust-card">
+      <div class="trust-number">01</div>
+      <h3>Atendimento personalizado</h3>
+      <p>
+        Nossa equipe pode ajudar você a encontrar
+        o modelo adequado.
+      </p>
+    </div>
+
+    <div class="trust-card">
+      <div class="trust-number">02</div>
+      <h3>Produtos selecionados</h3>
+      <p>
+        Consulte modelos, armazenamento,
+        disponibilidade e valores.
+      </p>
+    </div>
+
+    <div class="trust-card">
+      <div class="trust-number">03</div>
+      <h3>Fale pelo WhatsApp</h3>
+      <p>
+        Tire suas dúvidas diretamente
+        com nossa equipe.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="sobre" class="about-section">
+
+  <div class="about-image">
+    <img
+      src="/assets/products/iphone15pro.png"
+      alt="iPhoneCenter"
+    >
+  </div>
+
+  <div class="about-content">
+
+    <span>DESDE A PRIMEIRA CONVERSA</span>
+
+    <h2>Atendimento simples, claro e personalizado.</h2>
+
+    <p>
+      Conte o que você procura e nossa equipe poderá
+      orientar sobre modelos, armazenamento,
+      disponibilidade e condições de atendimento.
+    </p>
+
+    <a href="#atendimento" class="primary-button">
+      Solicitar atendimento
+    </a>
+
+  </div>
+
+</section>
+
+
+<section class="service-highlights">
+  <div class="section-heading centered">
+    <span class="hero-label">IPHONECENTER</span>
+    <h2>Uma experiência simples.</h2>
+    <p>Informação clara para você escolher seu aparelho com tranquilidade.</p>
+  </div>
+
+  <div class="service-grid">
+    <article class="service-card">
+      <div class="service-number">01</div>
+      <h3>Atendimento personalizado</h3>
+      <p>Converse diretamente com nossa equipe e tire suas dúvidas sobre os aparelhos.</p>
+    </article>
+
+    <article class="service-card">
+      <div class="service-number">02</div>
+      <h3>Produtos selecionados</h3>
+      <p>Um catálogo organizado para facilitar a consulta aos modelos disponíveis.</p>
+    </article>
+
+    <article class="service-card">
+      <div class="service-number">03</div>
+      <h3>Condições facilitadas</h3>
+      <p>Consulte as opções de pagamento e parcelamento para o aparelho escolhido.</p>
+    </article>
+  </div>
+</section>
+
+<section id="atendimento" class="contact-section">
+
+  <div class="contact-header">
+
+    <span>ATENDIMENTO</span>
+
+    <h2>Vamos encontrar seu próximo iPhone.</h2>
+
+    <p>
+      Preencha o formulário e nossa equipe poderá
+      entrar em contato.
+    </p>
+
+  </div>
+
+  <form id="leadForm" class="contact-form">
+
+    <div class="form-row">
+
+      <label>
+        Nome
+        <input
+          type="text"
+          name="name"
+          required
+          maxlength="120"
+          placeholder="Seu nome"
+        >
+      </label>
+
+      <label>
+        WhatsApp / Telefone
+        <input
+          type="tel"
+          name="phone"
+          required
+          maxlength="40"
+          placeholder="(11) 99999-9999"
+        >
+      </label>
+
+    </div>
+
+    <div class="form-row">
+
+      <label>
+        E-mail
+        <input
+          type="email"
+          name="email"
+          maxlength="160"
+          placeholder="seu@email.com"
+        >
+      </label>
+
+      <label>
+        Produto
+        <select name="product">
+          <option value="">Selecione</option>
+        </select>
+      </label>
+
+    </div>
+
+    <label>
+      Cidade de entrega
+      <input
+        type="text"
+        name="delivery_city"
+        maxlength="120"
+        placeholder="Sua cidade"
+      >
+    </label>
+
+    <label>
+      Mensagem
+      <textarea
+        name="message"
+        maxlength="1000"
+        rows="5"
+        placeholder="Conte o que você procura..."
+      ></textarea>
+    </label>
+
+    <label class="consent">
+      <input type="checkbox" name="consent" required>
+      <span>
+        Autorizo o contato para tratar desta solicitação.
+      </span>
+    </label>
+
+    <button type="submit" class="primary-button form-submit">
+      Solicitar informações
+    </button>
+
+    <p class="privacy-note">
+      Não envie senhas, códigos de verificação,
+      dados completos de cartão ou credenciais de acesso.
+    </p>
+
+  </form>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="footer-main">
+
+    <div>
+      <a href="/" class="footer-logo">iPhoneCenter</a>
+      <p>Seu iPhone, sempre com você.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#produtos">iPhones</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#atendimento">Atendimento</a>
+      <a href="/privacidade.html">Privacidade</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 iPhoneCenter</span>
+    <span>Todos os direitos reservados.</span>
+  </div>
+
+</footer>
+
+
+<script>
+const RED_GALLERY_12_MINI = [
+  "/assets/products/iphone-12-mini/vermelho/vermelho-01.jpeg",
+  "/assets/products/iphone-12-mini/vermelho/vermelho-02.webp",
+  "/assets/products/iphone-12-mini/vermelho/vermelho-03.jpeg",
+  "/assets/products/iphone-12-mini/vermelho/vermelho-04.webp"
+];
+
+const GREEN_GALLERY_12_MINI = [
+  "/assets/products/iphone-12-mini/verde/verde-01.webp",
+  "/assets/products/iphone-12-mini/verde/verde-02.webp",
+  "/assets/products/iphone-12-mini/verde/verde-03.webp",
+  "/assets/products/iphone-12-mini/verde/verde-04.jpeg"
+];
+
+const WHITE_GALLERY_12 = [
+  "/assets/products/iphone-12/branco/branco-01.webp",
+  "/assets/products/iphone-12/branco/branco-02.webp",
+  "/assets/products/iphone-12/branco/branco-03.webp",
+  "/assets/products/iphone-12/branco/branco-04.webp"
+];
+
+const BLACK_GALLERY_12 = [
+  "/assets/products/iphone-12/preto/preto-01.webp",
+  "/assets/products/iphone-12/preto/preto-02.webp",
+  "/assets/products/iphone-12/preto/preto-03.webp",
+  "/assets/products/iphone-12/preto/preto-04.webp"
+];
+
+const PURPLE_GALLERY_12 = [
+  "/assets/products/iphone-12/roxo/roxo-01.webp",
+  "/assets/products/iphone-12/roxo/roxo-02.webp",
+  "/assets/products/iphone-12/roxo/roxo-03.webp",
+  "/assets/products/iphone-12/roxo/roxo-04.webp"
+];
+
+const GRAPHITE_GALLERY_12_PRO_MAX = [
+  "/assets/products/iphone-12-pro-max/grafite/grafite-01.webp",
+  "/assets/products/iphone-12-pro-max/grafite/grafite-02.webp",
+  "/assets/products/iphone-12-pro-max/grafite/grafite-03.webp",
+  "/assets/products/iphone-12-pro-max/grafite/grafite-04.webp"
+];
+
+const SILVER_GALLERY_12_PRO_MAX = [
+  "/assets/products/iphone-12-pro-max/prata/prata-01.webp",
+  "/assets/products/iphone-12-pro-max/prata/prata-02.webp",
+  "/assets/products/iphone-12-pro-max/prata/prata-03.webp",
+  "/assets/products/iphone-12-pro-max/prata/prata-04.webp"
+];
+
+const PACIFIC_BLUE_GALLERY_12_PRO_MAX = [
+  "/assets/products/iphone-12-pro-max/azul-pacifico/azul-pacifico-01.webp",
+  "/assets/products/iphone-12-pro-max/azul-pacifico/azul-pacifico-02.webp",
+  "/assets/products/iphone-12-pro-max/azul-pacifico/azul-pacifico-03.webp",
+  "/assets/products/iphone-12-pro-max/azul-pacifico/azul-pacifico-04.webp"
+];
+
+const BLUE_GALLERY_12_MINI = [
+  "/assets/products/iphone-12-mini/azul/azul-01.jpeg",
+  "/assets/products/iphone-12-mini/azul/azul-02.jpeg",
+  "/assets/products/iphone-12-mini/azul/azul-03.jpeg",
+  "/assets/products/iphone-12-mini/azul/azul-04.jpeg"
+];
+
+const GREEN_GALLERY_11_PRO_MAX = ["/assets/products/iphone-11-pro-max/verde-01.webp", "/assets/products/iphone-11-pro-max/verde-02.webp", "/assets/products/iphone-11-pro-max/verde-03.webp", "/assets/products/iphone-11-pro-max/verde-04.webp"];
+</script>
+<script src="/data/products.js">
+</script>
+<script src="/app.js"></script>
+
+<script>
+
+function changeProductImage(button, imageUrl) {
+  const gallery = button.closest(".product-gallery");
+  if (!gallery) return;
+
+  const mainImage = gallery.querySelector(".gallery-main-image");
+  if (!mainImage) return;
+
+  mainImage.src = imageUrl;
+
+  gallery.querySelectorAll(".gallery-thumb").forEach((thumb) => {
+    thumb.classList.remove("active");
+  });
+
+  button.classList.add("active");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const searchForm = document.querySelector(".header-search");
+  const searchInput = searchForm ? searchForm.querySelector("input") : null;
+
+  if (searchForm && searchInput) {
+    searchForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const query = searchInput.value.trim().toLowerCase();
+      const cards = document.querySelectorAll("#produtos .product-card");
+
+      cards.forEach((card) => {
+        const index = Number(card.dataset.productIndex);
+        const product = window.products[index];
+
+        if (!product) return;
+
+        const text = [
+          product.name || "",
+          product.description || "",
+          product.status || "",
+          ...(Array.isArray(product.colors) ? product.colors : []),
+          ...(Array.isArray(product.storages)
+            ? product.storages.map(item => item.storage || "")
+            : [])
+        ].join(" ").toLowerCase();
+
+        card.style.display = !query || text.includes(query) ? "" : "none";
+      });
+
+      const produtos = document.getElementById("produtos");
+
+      if (produtos) {
+        produtos.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+
+    searchInput.addEventListener("input", function () {
+      if (this.value.trim() === "") {
+        document.querySelectorAll("#produtos .product-card").forEach((card) => {
+          card.style.display = "";
+        });
+      }
+    });
+  }
+
+  const catalog = document.querySelector("#produtos .cards");
+
+  if (!catalog || !Array.isArray(window.products)) {
+    return;
+  }
+
+  catalog.innerHTML = window.products.map((product, index) => {
+
+    const storages = Array.isArray(product.storages)
+      ? product.storages
+      : [{
+          storage: product.storage || "",
+          price: product.price || ""
+        }];
+
+    const firstStorage = storages[0] || {
+      storage: "",
+      price: ""
+    };
+
+    return `
+    <article class="product-card" data-product-index="${index}">
+
+      <div class="product-badge">
+        ${product.status || "Disponível"}
+      </div>
+
+      ${
+        !product.gallery
+          ? `
+            <div class="product-photo">
+              <img
+                src="${product.image}"
+                alt="${product.name}"
+              >
+            </div>
+          `
+          : ""
+      }
+
+      <div class="product-info">
+
+        ${
+          product.gallery
+            ? `
+              <div class="product-gallery">
+                <div class="gallery-main">
+                  <img
+                    src="${product.gallery[0]}"
+                    alt="${product.name}"
+                    class="gallery-main-image"
+                    loading="lazy"
+                  >
+                </div>
+
+                <div class="gallery-thumbs">
+                  ${product.gallery.map((img, i) => `
+                    <button
+                      type="button"
+                      class="gallery-thumb ${i === 0 ? "active" : ""}"
+                      onclick="changeProductImage(this, '${img}')"
+                      aria-label="Ver imagem ${i + 1} de ${product.name}"
+                    >
+                      <img
+                        src="${img}"
+                        alt="${product.name} - imagem ${i + 1}"
+                        loading="lazy"
+                      >
+                    </button>
+                  `).join("")}
+                </div>
+              </div>
+            `
+            : ""
+        }
+
+        <h3>${product.name}</h3>
+
+        ${
+          product.description
+            ? `<p class="product-description">${product.description}</p>`
+            : ""
+        }
+
+        ${
+          Array.isArray(product.colors) && product.colors.length
+            ? `
+              <div class="colors-selector">
+                <button
+                  type="button"
+                  class="colors-toggle"
+                  onclick="toggleColors(this)"
+                >
+                  <span>Cores:</span>
+                  <span class="colors-arrow">▼</span>
+                </button>
+
+                <div class="colors-options">
+                  ${product.colors.map(color => `
+                    <button
+                      type="button"
+                      class="color-option"
+                      onclick="selectColor(this)"
+                    >
+                      ${color}
+                    </button>
+                  `).join("")}
+                </div>
+              </div>
+            `
+            : ""
+        }
+
+        <div class="storage-selector">
+          ${storages.map((item, storageIndex) => `
+            <button
+              type="button"
+              class="storage-option ${storageIndex === 0 ? "active" : ""}"
+              onclick="selectStorage(this, ${index}, ${storageIndex})"
+            >
+              ${item.storage}
+            </button>
+          `).join("")}
+        </div>
+
+        <p class="selected-storage">${firstStorage.storage}</p>
+
+        <strong class="selected-price">${firstStorage.price}</strong>
+
+        <small>
+          ${product.status || "Disponível"}
+        </small>
+
+        <div class="product-actions">
+
+          <a
+            class="product-button cart-button"
+            href="#"
+            onclick="addProductToCart(${index}); return false;"
+          >
+            Adicionar ao carrinho
+          </a>
+
+          <a
+            class="product-button"
+            href="#atendimento"
+            onclick="selectProduct(this)"
+          >
+            Consultar
+          </a>
+
+          <a
+            class="product-button installment-button"
+            href="/parcelamento.html"
+            onclick="openInstallment(this); return false;"
+          >
+            Parcelamento
+          </a>
+
+          <a
+            class="product-button whatsapp-button"
+            href="#"
+            onclick="openWhatsApp(this); return false;"
+          >
+            <svg class="whatsapp-icon"
+                 viewBox="0 0 24 24"
+                 aria-hidden="true">
+              <path fill="currentColor"
+                d="M20.52 3.48A11.87 11.87 0 0 0 12.07 0C5.52 0 .19 5.33.19 11.88c0 2.09.55 4.13 1.6 5.93L.1 24l6.35-1.66a11.82 11.82 0 0 0 5.62 1.43h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.23-6.15-3.44-8.41ZM12.08 21.77h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.77.99 1.01-3.67-.23-.38a9.86 9.86 0 1 1 8.39 4.65Zm5.42-7.39c-.3-.15-1.78-.88-2.05-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.94 1.18-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.06 2.89 1.21 3.09.15.2 2.09 3.19 5.07 4.48.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.08 1.78-.73 2.03-1.44.25-.71.25-1.32.17-1.44-.07-.12-.27-.2-.57-.35Z"
+              />
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+    `;
+  }).join("");
+
+});
+
+
+function addProductToCart(index) {
+  const product = window.products[index];
+  if (!product) return;
+
+  const card = document.querySelector(
+    `.product-card[data-product-index="${index}"]`
+  );
+
+  const storage =
+    card?.querySelector(".selected-storage")?.textContent.trim() || "";
+
+  const price =
+    card?.querySelector(".selected-price")?.textContent.trim() || "";
+
+  const selectedStorage =
+    product.storages?.find(item => item.storage === storage);
+
+  const cartProduct = {
+    ...product,
+    storage,
+    price,
+    ...(selectedStorage || {}),
+    id: `${product.name}-${storage}`
+      .replace(/\s+/g, "-")
+      .toLowerCase()
+  };
+
+  addToCart(cartProduct);
+}
+
+
+function toggleColors(button) {
+  const container = button.closest(".colors-selector");
+  if (!container) return;
+
+  container.classList.toggle("open");
+
+  const arrow = button.querySelector(".colors-arrow");
+
+  if (arrow) {
+    arrow.textContent =
+      container.classList.contains("open") ? "▲" : "▼";
+  }
+}
+
+function selectColor(button) {
+  const container = button.closest(".colors-selector");
+  if (!container) return;
+
+  container.querySelectorAll(".color-option").forEach(option => {
+    option.classList.remove("active");
+  });
+
+  button.classList.add("active");
+
+  const color = button.textContent.trim();
+  const card = button.closest(".product-card");
+
+  if (!card) return;
+
+  const productName = card.querySelector(".product-name, h2, h3");
+  if (!productName) return;
+
+  const name = productName.textContent.trim();
+  const gallery = card.querySelector(".product-gallery");
+
+  if (!gallery) return;
+
+  const mainImage = gallery.querySelector(".gallery-main-image");
+  const thumbsContainer = gallery.querySelector(".gallery-thumbs");
+
+  if (!mainImage || !thumbsContainer) return;
+
+  let images = [];
+
+  // iPhone 11 Pro Max
+  if (name === "iPhone 11 Pro Max" && color === "Verde") {
+    images = GREEN_GALLERY_11_PRO_MAX;
+  }
+
+  else if (name === "iPhone 11 Pro Max" && color === "Prata") {
+    const productIndex = Array.from(
+      document.querySelectorAll(".product-card")
+    ).indexOf(card);
+
+    const product = window.products[productIndex];
+
+    if (product && Array.isArray(product.gallery)) {
+      images = product.gallery;
+    }
+  }
+
+  // iPhone 12 mini
+  else if (name === "iPhone 12 mini" && color === "Azul") {
+    images = BLUE_GALLERY_12_MINI;
+  }
+
+  else if (name === "iPhone 12 mini" && color === "Vermelho") {
+    images = RED_GALLERY_12_MINI;
+  }
+
+  else if (name === "iPhone 12 mini" && color === "Verde") {
+    images = GREEN_GALLERY_12_MINI;
+  }
+
+  // iPhone 12
+  else if (name === "iPhone 12" && color === "Branco") {
+    images = WHITE_GALLERY_12;
+  }
+
+  else if (name === "iPhone 12" && color === "Preto") {
+    images = BLACK_GALLERY_12;
+  }
+
+  else if (name === "iPhone 12" && color === "Roxo") {
+    images = PURPLE_GALLERY_12;
+  }
+
+  // iPhone 12 Pro Max
+  else if (name === "iPhone 12 Pro Max" && color === "Grafite") {
+    images = GRAPHITE_GALLERY_12_PRO_MAX;
+  }
+
+  else if (name === "iPhone 12 Pro Max" && color === "Prata") {
+    images = SILVER_GALLERY_12_PRO_MAX;
+  }
+
+  else if (name === "iPhone 12 Pro Max" && color === "Azul Pacífico") {
+    images = PACIFIC_BLUE_GALLERY_12_PRO_MAX;
+  }
+
+  // Outras situações: galeria original
+  else {
+    const productIndex = Array.from(
+      document.querySelectorAll(".product-card")
+    ).indexOf(card);
+
+    const product = window.products[productIndex];
+
+    if (product && Array.isArray(product.gallery)) {
+      images = product.gallery;
+    }
+  }
+
+  if (!images.length) return;
+
+  mainImage.src = images[0];
+
+  thumbsContainer.innerHTML = images.map((img, index) => `
+    <button
+      type="button"
+      class="gallery-thumb ${index === 0 ? "active" : ""}"
+      onclick="changeProductImage(this, '${img}')"
+    >
+      <img src="${img}" alt="Imagem ${index + 1}">
+    </button>
+  `).join("");
+}
+
+function selectStorage(button, productIndex, storageIndex) {
+
+  const product = window.products[productIndex];
+
+  if (!product || !Array.isArray(product.storages)) {
+    return;
+  }
+
+  const storage = product.storages[storageIndex];
+
+  if (!storage) {
+    return;
+  }
+
+  const card = button.closest(".product-card");
+
+  if (!card) {
+    return;
+  }
+
+  card.querySelectorAll(".storage-option").forEach(option => {
+    option.classList.remove("active");
+  });
+
+  button.classList.add("active");
+
+  const storageText =
+    card.querySelector(".selected-storage");
+
+  const priceText =
+    card.querySelector(".selected-price");
+
+  if (storageText) {
+    storageText.textContent = storage.storage;
+  }
+
+  if (priceText) {
+    priceText.textContent = storage.price;
+  }
+}
+
+
+function openInstallment(button) {
+  const card = button.closest(".product-card");
+
+  if (!card) return;
+
+  const product = card.querySelector("h3")?.textContent.trim() || "";
+  const storage = card.querySelector(".selected-storage")?.textContent.trim() || "";
+  const price = card.querySelector(".selected-price")?.textContent.trim() || "";
+
+  const params = new URLSearchParams({
+    product,
+    storage,
+    price
+  });
+
+  window.location.href = `/parcelamento.html?${params.toString()}`;
+}
+
+function openWhatsApp(button) {
+
+  const card = button.closest(".product-card");
+
+  if (!card) return;
+
+  const name =
+    card.querySelector("h3")?.textContent.trim() || "";
+
+  const storage =
+    card.querySelector(".product-info p")?.textContent.trim() || "";
+
+  const price =
+    card.querySelector("strong")?.textContent.trim() || "";
+
+  const product =
+    `${name} ${storage}`.trim();
+
+  const message =
+    `Olá! Tenho interesse no ${product}. ` +
+    `Gostaria de saber mais informações. ` +
+    `Valor informado: ${price}.`;
+
+  const url =
+    `https://wa.me/5511951507876?text=${encodeURIComponent(message)}`;
+
+  window.open(url, "_blank");
+
+}
+
+
+function selectProduct(button) {
+  const card = button.closest(".product-card");
+  if (!card) return;
+
+  const product = card.querySelector("h3")?.textContent.trim() || "";
+  const storage = card.querySelector(".selected-storage")?.textContent.trim() || "";
+  const price = card.querySelector(".selected-price")?.textContent.trim() || "";
+
+  const select = document.querySelector('select[name="product"]');
+
+  if (select) {
+    const label = `${product} — ${storage} — ${price}`;
+
+    let option = Array.from(select.options).find(
+      item => item.value === label
+    );
+
+    if (!option) {
+      option = document.createElement("option");
+      option.value = label;
+      option.textContent = label;
+      select.appendChild(option);
+    }
+
+    select.value = label;
+  }
+
+  const atendimento = document.querySelector("#atendimento");
+
+  if (atendimento) {
+    atendimento.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+}
+
+
+</script>
+
+
+<!-- CARRINHO -->
+<button id="cartButton" class="cart-floating" onclick="openCart()" aria-label="Abrir carrinho">
+  🛒
+  <span id="cartCount">0</span>
+</button>
+
+<div id="cartPanel" class="cart-panel">
+  <div class="cart-header">
+    <h2>Seu carrinho</h2>
+    <button class="cart-close" onclick="closeCart()">×</button>
+  </div>
+
+  <div id="cartItems" class="cart-items"></div>
+
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <strong id="cartTotal">R$ 0,00</strong>
+    </div>
+
+    <button class="cart-checkout" onclick="checkoutCart()">
+      Finalizar pedido
+    </button>
+  </div>
+</div>
+
+<style>
+.cart-floating {
+  position: fixed;
+  right: 18px;
+  bottom: 20px;
+  width: 52px;
+  height: 52px;
+  border: 0;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  font-size: 22px;
+  z-index: 9998;
+  box-shadow: 0 8px 25px rgba(0,0,0,.25);
+  cursor: pointer;
+}
+
+#cartCount {
+  position: absolute;
+  top: -5px;
+  right: -4px;
+  min-width: 21px;
+  height: 21px;
+  padding: 0 5px;
+  border-radius: 20px;
+  background: #25d366;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: -420px;
+  width: min(400px, 92vw);
+  height: 100vh;
+  background: #fff;
+  z-index: 9999;
+  box-shadow: -8px 0 30px rgba(0,0,0,.2);
+  transition: right .25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-panel.open {
+  right: 0;
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.cart-close {
+  border: 0;
+  background: #f1f1f1;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-info h4 {
+  margin: 0 0 5px;
+  font-size: 15px;
+}
+
+.cart-item-info p {
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 18px;
+}
+
+.remove-cart {
+  border: 0;
+  background: transparent;
+  color: #888;
+  font-size: 25px;
+}
+
+.cart-footer {
+  padding: 18px;
+  border-top: 1px solid #eee;
+}
+
+.cart-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.cart-checkout {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 12px;
+  background: #25d366;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 50px 20px;
+  color: #777;
+}
+
+/* Melhor enquadramento dos produtos no celular */
+@media (max-width: 600px) {
+
+  #produtos .cards {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #produtos .product-card {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+
+  #produtos .product-photo {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  #produtos .product-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  #produtos .product-info {
+    padding: 12px 10px;
+    min-width: 0;
+  }
+
+  #produtos .product-info h3 {
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 0 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #produtos .product-info p {
+    font-size: 13px;
+    margin: 0 0 7px;
+  }
+
+  #produtos .product-info strong {
+    display: block;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  #produtos .product-info small {
+    font-size: 11px;
+  }
+
+  
+.storage-selector {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+  width: 100%;
+  margin: 8px 0 6px;
+}
+
+.storage-option {
+  width: 100%;
+  height: 32px;
+  padding: 5px 4px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  background: #fff;
+  color: #111;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.storage-option.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.selected-storage {
+  display: none;
+}
+
+.selected-price {
+  display: block;
+  margin-top: 4px;
+}
+
+.product-actions {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 48px);
+    gap: 7px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .product-actions .product-button {
+    width: 100%;
+    min-width: 0;
+    height: 48px;
+    min-height: 48px;
+    box-sizing: border-box;
+    padding: 9px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.15;
+    white-space: normal;
+    font-size: 11px;
+    overflow: hidden;
+  }
+
+  .product-actions .cart-button {
+    font-size: 11px;
+  }
+
+  .product-actions .product-button:not(.whatsapp-button) {
+    background: #3a3a3a !important;
+    color: #fff !important;
+    border: 1px solid #3a3a3a !important;
+  }
+
+  .product-actions .installment-button {
+    width: 50% !important;
+    justify-self: center;
+    grid-column: 1 / 3;
+    min-width: 0 !important;
+    margin: 0;
+    box-sizing: border-box;
+    transform: none;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    font-size: 11px !important;
+    letter-spacing: normal;
+    white-space: normal !important;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 380px) {
+  #produtos .cards {
+    gap: 8px;
+  }
+
+  #produtos .product-info {
+    padding: 10px 7px;
+  }
+
+  .product-actions {
+    gap: 5px;
+  }
+
+  .product-actions .product-button {
+    font-size: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
+
+/* =========================
+   GALERIA DE PRODUTOS
+========================= */
+
+.product-gallery {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.gallery-main {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 6px;
+  margin-top: 7px;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.gallery-thumbs::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-thumb {
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery-thumb.active {
+  border: 2px solid #111;
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 380px) {
+  .gallery-main {
+    height: 200px;
+  }
+
+  .gallery-thumb {
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+
+/* Brilho azul contínuo em toda a página */
+html {
+  background:
+    radial-gradient(
+      ellipse 500px 900px at -80px 50%,
+      rgba(40, 120, 255, 0.16) 0%,
+      rgba(40, 120, 255, 0.08) 35%,
+      rgba(40, 120, 255, 0) 75%
+    ),
+    radial-gradient(
+      ellipse 500px 900px at calc(100% + 80px) 50%,
+      rgba(40, 120, 255, 0.16) 0%,
+      rgba(40, 120, 255, 0.08) 35%,
+      rgba(40, 120, 255, 0) 75%
+    );
+  background-attachment: fixed;
+}
+
+body {
+  position: relative;
+  background: transparent !important;
+}
+
+
+/* Borrão azul por toda a área dos produtos */
+#produtos {
+  position: relative;
+  overflow: visible !important;
+  background:
+    radial-gradient(
+      ellipse 900px 900px at 50% 45%,
+      rgba(40, 120, 255, 0.10) 0%,
+      rgba(40, 120, 255, 0.07) 30%,
+      rgba(40, 120, 255, 0.04) 55%,
+      rgba(40, 120, 255, 0) 80%
+    ),
+    radial-gradient(
+      ellipse 550px 900px at 0% 50%,
+      rgba(40, 120, 255, 0.14) 0%,
+      rgba(40, 120, 255, 0) 75%
+    ),
+    radial-gradient(
+      ellipse 550px 900px at 100% 50%,
+      rgba(40, 120, 255, 0.14) 0%,
+      rgba(40, 120, 255, 0) 75%
+    ) !important;
+  background-attachment: fixed;
+}
+
+
+/* Brilho azul também no rodapé */
+footer {
+  position: relative;
+  overflow: visible !important;
+  background:
+    radial-gradient(
+      ellipse 420px 600px at -60px 50%,
+      rgba(40, 120, 255, 0.15) 0%,
+      rgba(40, 120, 255, 0.07) 40%,
+      rgba(40, 120, 255, 0) 75%
+    ),
+    radial-gradient(
+      ellipse 420px 600px at calc(100% + 60px) 50%,
+      rgba(40, 120, 255, 0.15) 0%,
+      rgba(40, 120, 255, 0.07) 40%,
+      rgba(40, 120, 255, 0) 75%
+    ) !important;
+  background-attachment: fixed;
+}
+
+</style>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".header-search");
+  const input = form ? form.querySelector("input") : null;
+
+  if (!form || !input || !Array.isArray(window.products)) return;
+
+  form.style.position = "relative";
+
+  const preview = document.createElement("div");
+  preview.className = "search-preview";
+  preview.setAttribute("role", "listbox");
+  preview.hidden = true;
+  form.appendChild(preview);
+
+  function hidePreview() {
+    preview.hidden = true;
+    preview.innerHTML = "";
+  }
+
+  function showPreview() {
+    const query = input.value.trim().toLowerCase();
+
+    if (!query) {
+      hidePreview();
+      return;
+    }
+
+    const matches = window.products
+      .map((product, index) => ({ product, index }))
+      .filter(({ product }) => (product.name || "").toLowerCase().includes(query))
+      .slice(0, 5);
+
+    if (!matches.length) {
+      preview.innerHTML = '<div class="search-preview-empty">Nenhum produto encontrado.</div>';
+      preview.hidden = false;
+      return;
+    }
+
+    preview.innerHTML = matches.map(({ product, index }) => {
+      const image = product.gallery && product.gallery.length
+        ? product.gallery[0]
+        : (product.image || "");
+      const price = product.storages && product.storages.length
+        ? product.storages[0].price
+        : product.price;
+
+      return `
+        <button type="button" class="search-preview-item" data-product-index="${index}">
+          <img src="${image}" alt="" loading="lazy">
+          <span class="search-preview-details">
+            <strong>${product.name || "iPhone"}</strong>
+            <small>${price ? "A partir de " + price : "Consulte o preço"}</small>
+          </span>
+        </button>
+      `;
+    }).join("");
+
+    preview.hidden = false;
+  }
+
+  input.addEventListener("input", showPreview);
+  input.addEventListener("focus", showPreview);
+
+  preview.addEventListener("click", function (event) {
+    const item = event.target.closest(".search-preview-item");
+    if (!item) return;
+
+    const index = Number(item.dataset.productIndex);
+    const card = document.querySelector('#produtos .product-card[data-product-index="' + index + '"]');
+
+    hidePreview();
+
+    if (card) {
+      document.querySelectorAll("#produtos .product-card").forEach(el => {
+        el.style.display = "";
+      });
+      card.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!form.contains(event.target)) hidePreview();
+  });
+
+  form.addEventListener("submit", hidePreview);
+});
+</script>
+
+</body>
+</html>

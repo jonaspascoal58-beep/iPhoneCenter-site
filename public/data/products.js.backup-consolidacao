@@ -1,0 +1,745 @@
+window.products = [
+
+  /* =========================
+     IPHONE X — SEMINOVO
+  ========================== */
+  {
+    name: "iPhone X",
+    storage: "64 GB",
+    price: "R$ 1.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone X",
+    storage: "256 GB",
+    price: "R$ 1.699,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+
+  /* =========================
+     IPHONE XR — SEMINOVO
+  ========================== */
+  {
+    name: "iPhone XR",
+    storage: "64 GB",
+    price: "R$ 1.599,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone XR",
+    storage: "128 GB",
+    price: "R$ 1.799,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+
+  /* =========================
+     IPHONE XS — SEMINOVO
+  ========================== */
+  {
+    name: "iPhone XS",
+    storage: "64 GB",
+    price: "R$ 1.699,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone XS",
+    storage: "256 GB",
+    price: "R$ 1.999,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+
+  /* =========================
+     IPHONE XS MAX — SEMINOVO
+  ========================== */
+  {
+    name: "iPhone XS Max",
+    storage: "64 GB",
+    price: "R$ 1.899,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone XS Max",
+    storage: "256 GB",
+    price: "R$ 2.199,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+
+  /* =========================
+     IPHONE 11 — SEMINOVO
+  ========================== */
+  {
+    name: "iPhone 11",
+    storage: "64 GB",
+    price: "R$ 1.699,99",
+    image: "/assets/products/iphone-11/01-iphone-11.jpg",
+    gallery: [
+      "/assets/products/iphone-11/01-iphone-11.jpg",
+      "/assets/products/iphone-11/02-iphone-11-traseira.jpg",
+      "/assets/products/iphone-11/03-iphone-11-cores.jpg",
+      "/assets/products/iphone-11/04-iphone-11-angulado.jpg"
+    ],
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone 11",
+    storage: "128 GB",
+    price: "R$ 1.899,99",
+    image: "/assets/products/iphone-11/01-iphone-11.jpg",
+    gallery: [
+      "/assets/products/iphone-11/01-iphone-11.jpg",
+      "/assets/products/iphone-11/02-iphone-11-traseira.jpg",
+      "/assets/products/iphone-11/03-iphone-11-cores.jpg",
+      "/assets/products/iphone-11/04-iphone-11-angulado.jpg"
+    ],
+    status: "Seminovo"
+  },
+
+  /* =========================
+     IPHONE 11 PRO — SEMINOVO
+  ========================== */
+  {
+    name: "iPhone 11 Pro",
+    storage: "64 GB",
+    price: "R$ 1.999,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone 11 Pro",
+    storage: "256 GB",
+    price: "R$ 2.299,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+
+  /* =========================
+     IPHONE 11 PRO MAX — SEMINOVO
+  ========================== */
+  {
+    name: "iPhone 11 Pro Max",
+    storage: "64 GB",
+    price: "R$ 2.199,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone 11 Pro Max",
+    storage: "256 GB",
+    price: "R$ 2.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+
+  /* =========================
+     IPHONE 12 MINI — SEMINOVO
+  ========================== */
+  {
+    name: "iPhone 12 mini",
+    storage: "64 GB",
+    price: "R$ 1.799,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone 12 mini",
+    storage: "128 GB",
+    price: "R$ 1.999,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+
+  /* =========================
+     IPHONE 12 — SEMINOVO
+  ========================== */
+  {
+    name: "iPhone 12",
+    storage: "64 GB",
+    price: "R$ 1.899,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone 12",
+    storage: "128 GB",
+    price: "R$ 2.099,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone 12",
+    storage: "256 GB",
+    price: "R$ 2.299,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+
+  /* =========================
+     IPHONE 12 PRO — SEMINOVO
+  ========================== */
+  {
+    name: "iPhone 12 Pro",
+    storage: "128 GB",
+    price: "R$ 2.199,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone 12 Pro",
+    storage: "256 GB",
+    price: "R$ 2.399,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone 12 Pro",
+    storage: "512 GB",
+    price: "R$ 2.699,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+
+  /* =========================
+     IPHONE 12 PRO MAX — SEMINOVO
+  ========================== */
+  {
+    name: "iPhone 12 Pro Max",
+    storage: "128 GB",
+    price: "R$ 2.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone 12 Pro Max",
+    storage: "256 GB",
+    price: "R$ 2.699,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+  {
+    name: "iPhone 12 Pro Max",
+    storage: "512 GB",
+    price: "R$ 2.999,99",
+    image: "/assets/products/iphone16.png",
+    status: "Seminovo"
+  },
+
+  /* =========================
+     IPHONE 13 — LACRADO
+  ========================== */
+  {
+    name: "iPhone 13",
+    storage: "128 GB",
+    price: "R$ 3.299,99",
+    image: "/assets/products/iphone15.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 13",
+    storage: "256 GB",
+    price: "R$ 3.699,99",
+    image: "/assets/products/iphone15-256.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 13 MINI — LACRADO
+  ========================== */
+  {
+    name: "iPhone 13 mini",
+    storage: "128 GB",
+    price: "R$ 3.399,99",
+    image: "/assets/products/iphone15.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 13 mini",
+    storage: "256 GB",
+    price: "R$ 3.799,99",
+    image: "/assets/products/iphone15-256.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 13 PRO — LACRADO
+  ========================== */
+  {
+    name: "iPhone 13 Pro",
+    storage: "128 GB",
+    price: "R$ 4.099,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 13 Pro",
+    storage: "256 GB",
+    price: "R$ 4.399,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 13 Pro",
+    storage: "512 GB",
+    price: "R$ 4.799,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 13 PRO MAX — LACRADO
+  ========================== */
+  {
+    name: "iPhone 13 Pro Max",
+    storage: "128 GB",
+    price: "R$ 4.499,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 13 Pro Max",
+    storage: "256 GB",
+    price: "R$ 4.899,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 13 Pro Max",
+    storage: "512 GB",
+    price: "R$ 5.299,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 14 — LACRADO
+  ========================== */
+  {
+    name: "iPhone 14",
+    storage: "128 GB",
+    price: "R$ 3.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 14",
+    storage: "256 GB",
+    price: "R$ 3.899,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 14 PLUS — LACRADO
+  ========================== */
+  {
+    name: "iPhone 14 Plus",
+    storage: "128 GB",
+    price: "R$ 3.899,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 14 Plus",
+    storage: "256 GB",
+    price: "R$ 4.299,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 14 PRO — LACRADO
+  ========================== */
+  {
+    name: "iPhone 14 Pro",
+    storage: "128 GB",
+    price: "R$ 4.499,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 14 Pro",
+    storage: "256 GB",
+    price: "R$ 4.899,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 14 PRO MAX — LACRADO
+  ========================== */
+  {
+    name: "iPhone 14 Pro Max",
+    storage: "128 GB",
+    price: "R$ 4.999,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 14 Pro Max",
+    storage: "256 GB",
+    price: "R$ 5.399,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 15 — LACRADO
+  ========================== */
+  {
+    name: "iPhone 15",
+    storage: "128 GB",
+    price: "R$ 4.099,99",
+    image: "/assets/products/iphone15.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 15",
+    storage: "256 GB",
+    price: "R$ 4.499,99",
+    image: "/assets/products/iphone15-256.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 15 PLUS — LACRADO
+  ========================== */
+  {
+    name: "iPhone 15 Plus",
+    storage: "128 GB",
+    price: "R$ 4.599,99",
+    image: "/assets/products/iphone15.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 15 Plus",
+    storage: "256 GB",
+    price: "R$ 4.999,99",
+    image: "/assets/products/iphone15-256.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 15 PRO — LACRADO
+  ========================== */
+  {
+    name: "iPhone 15 Pro",
+    storage: "128 GB",
+    price: "R$ 5.299,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 15 Pro",
+    storage: "256 GB",
+    price: "R$ 5.699,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 15 Pro",
+    storage: "512 GB",
+    price: "R$ 6.299,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 15 PRO MAX — LACRADO
+  ========================== */
+  {
+    name: "iPhone 15 Pro Max",
+    storage: "256 GB",
+    price: "R$ 6.199,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 15 Pro Max",
+    storage: "512 GB",
+    price: "R$ 7.199,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 15 Pro Max",
+    storage: "1 TB",
+    price: "R$ 8.199,99",
+    image: "/assets/products/iphone15pro.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 16 — LACRADO
+  ========================== */
+  {
+    name: "iPhone 16",
+    storage: "128 GB",
+    price: "R$ 4.749,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 16",
+    storage: "256 GB",
+    price: "R$ 5.399,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 16",
+    storage: "512 GB",
+    price: "R$ 6.399,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 16 PLUS — LACRADO
+  ========================== */
+  {
+    name: "iPhone 16 Plus",
+    storage: "128 GB",
+    price: "R$ 5.299,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 16 Plus",
+    storage: "256 GB",
+    price: "R$ 5.799,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 16 Plus",
+    storage: "512 GB",
+    price: "R$ 6.799,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 16 PRO — LACRADO
+  ========================== */
+  {
+    name: "iPhone 16 Pro",
+    storage: "128 GB",
+    price: "R$ 5.899,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 16 Pro",
+    storage: "256 GB",
+    price: "R$ 6.399,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 16 Pro",
+    storage: "512 GB",
+    price: "R$ 7.299,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 16 Pro",
+    storage: "1 TB",
+    price: "R$ 8.299,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 16 PRO MAX — LACRADO
+  ========================== */
+  {
+    name: "iPhone 16 Pro Max",
+    storage: "256 GB",
+    price: "R$ 7.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 16 Pro Max",
+    storage: "512 GB",
+    price: "R$ 8.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 16 Pro Max",
+    storage: "1 TB",
+    price: "R$ 9.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 17e — LACRADO
+  ========================== */
+  {
+    name: "iPhone 17e",
+    storage: "256 GB",
+    price: "R$ 5.999,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 17 — LACRADO
+  ========================== */
+  {
+    name: "iPhone 17",
+    storage: "256 GB",
+    price: "R$ 8.299,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 17",
+    storage: "512 GB",
+    price: "R$ 9.299,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 17 AIR — LACRADO
+  ========================== */
+  {
+    name: "iPhone 17 Air",
+    storage: "256 GB",
+    price: "R$ 10.999,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 17 Air",
+    storage: "512 GB",
+    price: "R$ 11.999,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 17 PRO — LACRADO
+  ========================== */
+  {
+    name: "iPhone 17 Pro",
+    storage: "256 GB",
+    price: "R$ 9.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 17 Pro",
+    storage: "512 GB",
+    price: "R$ 10.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 17 Pro",
+    storage: "1 TB",
+    price: "R$ 12.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 17 PRO MAX — LACRADO
+  ========================== */
+  {
+    name: "iPhone 17 Pro Max",
+    storage: "256 GB",
+    price: "R$ 10.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 17 Pro Max",
+    storage: "512 GB",
+    price: "R$ 11.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 17 Pro Max",
+    storage: "1 TB",
+    price: "R$ 13.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 18 PRO — LACRADO
+  ========================== */
+  {
+    name: "iPhone 18 Pro",
+    storage: "256 GB",
+    price: "R$ 11.999,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 18 Pro",
+    storage: "512 GB",
+    price: "R$ 13.999,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 18 Pro",
+    storage: "1 TB",
+    price: "R$ 15.999,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+
+  /* =========================
+     IPHONE 18 PRO MAX — LACRADO
+  ========================== */
+  {
+    name: "iPhone 18 Pro Max",
+    storage: "256 GB",
+    price: "R$ 12.999,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 18 Pro Max",
+    storage: "512 GB",
+    price: "R$ 14.999,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 18 Pro Max",
+    storage: "1 TB",
+    price: "R$ 17.499,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  },
+  {
+    name: "iPhone 18 Pro Max",
+    storage: "2 TB",
+    price: "R$ 20.999,99",
+    image: "/assets/products/iphone16.png",
+    status: "Lacrado"
+  }
+
+];
+
+console.log(
+  "iPhoneCenter: catálogo completo carregado:",
+  window.products.length,
+  "produtos"
+);

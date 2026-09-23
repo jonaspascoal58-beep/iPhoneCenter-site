@@ -1,0 +1,911 @@
+window.products = [
+  {
+    "name": "iPhone XR",
+"description": "Seminovo iPhone XR 64GB e 128GB - Branco - Condição Excelente",
+    "image": "/assets/products/iphone-xr/01-galeria.webp",
+    "colors": [
+      "Branco"
+    ],
+    "gallery": [
+      "/assets/products/iphone-xr/01-galeria.webp",
+      "/assets/products/iphone-xr/02-galeria.webp",
+      "/assets/products/iphone-xr/03-galeria.webp",
+      "/assets/products/iphone-xr/04-galeria.webp"
+    ],
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 999,99"
+      },
+      {
+        "storage": "128 GB",
+        "price": "R$ 1.199,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 11",
+    "description": "Seminovo iPhone 11 64GB, 256GB - Branco - Condição Excelente",
+    "colors": [
+      "Branco"
+    ],
+    "image": "/assets/products/iphone-11/04-galeria.webp",
+    "gallery": [
+      "/assets/products/iphone-11/04-galeria.webp",
+      "/assets/products/iphone-11/02-galeria.webp",
+      "/assets/products/iphone-11/03-galeria.jpg",
+      "/assets/products/iphone-11/01-galeria.jpg"
+    ],
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 1.389,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 1.449,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 11 Pro",
+    "description": "iPhone 11 Pro Apple Cinza Espacial, 64GB e 256GB",
+    "image": "/assets/products/iphone16.png",
+    "gallery": [
+      "/assets/products/iphone-11/07-galeria-1.jpg",
+      "/assets/products/iphone-11/08-galeria-2.jpg",
+      "/assets/products/iphone-11/09-galeria-3.jpg",
+      "/assets/products/iphone-11/10-galeria-4.jpg",
+      "/assets/products/iphone-11/11-galeria-5.jpg",
+      "/assets/products/iphone-11/12-galeria-6.jpg",
+      "/assets/products/iphone-11/13-galeria-7.jpg"
+    ],
+    "status": "Seminovo",
+    "colors": [
+      "Cinza"
+    ],
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 1.999,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 2.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 11 Pro Max",
+"description": "Seminovo iPhone 11 Pro Max 64GB, 256GB E 512GB - Prata, Verde - Condição Excelente",
+    "image": "/assets/products/iphone-11-pro-max/01-galeria.webp",
+    "colors": [
+      "Prata",
+      "Verde"
+    ],
+    "gallery": [
+      "/assets/products/iphone-11-pro-max/01-galeria.webp",
+      "/assets/products/iphone-11-pro-max/02-galeria.webp",
+      "/assets/products/iphone-11-pro-max/03-galeria.webp",
+      "/assets/products/iphone-11-pro-max/04-galeria.webp"
+    ],
+    "greenGallery": [
+      "/assets/products/iphone-11-pro-max/verde-01.webp",
+      "/assets/products/iphone-11-pro-max/verde-02.webp",
+      "/assets/products/iphone-11-pro-max/verde-03.webp",
+      "/assets/products/iphone-11-pro-max/verde-04.webp"
+    ],
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 2.199,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 2.499,99"
+      },
+    {
+      "storage": "512 GB",
+      "price": "R$ 0,00"
+    }
+    ]
+  },
+  {
+    "name": "iPhone 12 mini",
+    "image": "/assets/products/iphone16.png",
+    "description": "Seminovo iPhone 12 mini 64GB, 128GB e 256GB - Branco, Azul, Vermelho e Verde- Condição Excelente",
+    "colors": [
+    "Branco",
+    "Azul",
+    "Vermelho",
+    "Verde"
+  ],
+  "gallery": [
+    "/assets/products/iphone-12-mini/01-galeria.webp",
+    "/assets/products/iphone-12-mini/02-galeria.webp",
+    "/assets/products/iphone-12-mini/03-galeria.webp",
+    "/assets/products/iphone-12-mini/04-galeria.webp"
+  ],
+  "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 1.199,99"
+      },
+      {
+        "storage": "128 GB",
+        "price": "R$ 1.999,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 2.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 12",
+    "image": "/assets/products/iphone-12/branco/branco-01.webp",
+    "description": "Seminovo iPhone 12 64GB, 128GB e 256GB - Branco, Preto, Roxo - Condição Excelente",
+    "colors": [
+    "Branco",
+    "Preto",
+    "Roxo"
+  ],
+    "gallery": [
+    "/assets/products/iphone-12/branco/branco-01.webp",
+    "/assets/products/iphone-12/branco/branco-02.webp",
+    "/assets/products/iphone-12/branco/branco-03.webp",
+    "/assets/products/iphone-12/branco/branco-04.webp"
+  ],
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "64 GB",
+        "price": "R$ 1.449,99"
+      },
+      {
+        "storage": "128 GB",
+        "price": "R$ 2.099,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 2.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 12 Pro",
+    "image": "/assets/products/iphone-12-pro/dourado/dourado-01.webp",
+    "description": "Seminovo iPhone 12 Pro 128GB, 256GB, 512GB - Dourado - Condição Excelente",
+    "colors": [
+    "Dourado"
+  ],
+    "gallery": [
+    "/assets/products/iphone-12-pro/dourado/dourado-01.webp",
+    "/assets/products/iphone-12-pro/dourado/dourado-02.webp",
+    "/assets/products/iphone-12-pro/dourado/dourado-03.webp",
+    "/assets/products/iphone-12-pro/dourado/dourado-04.webp"
+  ],
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 2.199,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 2.399,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 2.699,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 12 Pro Max",
+    "image": "/assets/products/iphone-12-pro-max/grafite/grafite-01.webp",
+    "description": "Seminovo iPhone 12 Pro Max 128GB, 256GB e 512GB - Grafite, Prata, Azul Pacífico - Condição Excelente",
+    "colors": [
+    "Grafite",
+    "Prata",
+    "Azul Pacífico"
+  ],
+    "gallery": [
+    "/assets/products/iphone-12-pro-max/grafite/grafite-01.webp",
+    "/assets/products/iphone-12-pro-max/grafite/grafite-02.webp",
+    "/assets/products/iphone-12-pro-max/grafite/grafite-03.webp",
+    "/assets/products/iphone-12-pro-max/grafite/grafite-04.webp"
+  ],
+    "status": "Seminovo",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 2.499,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 2.699,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 2.999,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 13",
+    "description": "Apple iPhone 13 128GB e 256GB - Vermelho",
+    "image": "/assets/products/iphone-13/01.webp",
+    "status": "Lacrado",
+    "colors": [
+      {
+        "name": "Vermelho",
+        "gallery": [
+          "/assets/products/iphone-13/01.webp",
+          "/assets/products/iphone-13/02.webp",
+          "/assets/products/iphone-13/03.webp",
+          "/assets/products/iphone-13/04.webp",
+          "/assets/products/iphone-13/05.webp"
+        ]
+      }
+    ],
+    "gallery": [
+      "/assets/products/iphone-13/01.webp",
+      "/assets/products/iphone-13/02.webp",
+      "/assets/products/iphone-13/03.webp",
+      "/assets/products/iphone-13/04.webp",
+      "/assets/products/iphone-13/05.webp"
+    ],
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 3.299,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 3.699,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 13 mini",
+    "description": "Apple iPhone 13 Mini 128GB e 256GB - Preto, Rosa",
+    "image": "/assets/products/iphone-13-mini/preto/01.webp",
+    "status": "Lacrado",
+    "colors": [
+      {
+        "name": "Preto",
+        "gallery": [
+          "/assets/products/iphone-13-mini/preto/01.webp",
+          "/assets/products/iphone-13-mini/preto/02.webp",
+          "/assets/products/iphone-13-mini/preto/03.webp",
+          "/assets/products/iphone-13-mini/preto/04.webp",
+          "/assets/products/iphone-13-mini/preto/05.webp",
+          "/assets/products/iphone-13-mini/preto/06.webp",
+          "/assets/products/iphone-13-mini/preto/07.webp",
+          "/assets/products/iphone-13-mini/preto/08.jpeg",
+          "/assets/products/iphone-13-mini/preto/09.webp"
+        ]
+      },
+      {
+        "name": "Rosa",
+        "gallery": [
+          "/assets/products/iphone-13-mini/rosa/01.jpeg",
+          "/assets/products/iphone-13-mini/rosa/02.jpeg",
+          "/assets/products/iphone-13-mini/rosa/03.jpeg",
+          "/assets/products/iphone-13-mini/rosa/04.jpeg",
+          "/assets/products/iphone-13-mini/rosa/05.jpeg",
+          "/assets/products/iphone-13-mini/rosa/06.webp",
+          "/assets/products/iphone-13-mini/rosa/07.jpeg",
+          "/assets/products/iphone-13-mini/rosa/08.jpeg",
+          "/assets/products/iphone-13-mini/rosa/09.jpeg"
+        ]
+      }
+    ],
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 3.399,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 3.799,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 13 Pro",
+    "description": "iPhone 13 Pro 128GB, 256GB e 512GB - Prateado - Lacrado",
+    "image": "/assets/products/iphone-13-pro/prateado/01.webp",
+    "status": "Lacrado",
+    "colors": [
+      {
+        "name": "Prateado",
+        "gallery": [
+          "/assets/products/iphone-13-pro/prateado/01.webp",
+          "/assets/products/iphone-13-pro/prateado/02.jpeg",
+          "/assets/products/iphone-13-pro/prateado/03.webp",
+          "/assets/products/iphone-13-pro/prateado/04.webp",
+          "/assets/products/iphone-13-pro/prateado/05.webp"
+        ]
+      }
+    ],
+    "gallery": [
+      "/assets/products/iphone-13-pro/prateado/01.webp",
+      "/assets/products/iphone-13-pro/prateado/02.jpeg",
+      "/assets/products/iphone-13-pro/prateado/03.webp",
+      "/assets/products/iphone-13-pro/prateado/04.webp",
+      "/assets/products/iphone-13-pro/prateado/05.webp"
+    ],
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.099,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 4.399,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 4.799,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 13 Pro Max",
+    "image": "/assets/products/iphone-13-pro-max/01.jpeg",
+    "status": "Lacrado",
+    "description": "Apple iPhone 13 Pro Max 128GB, 256GB e 512GB - Verde-alpino, Dourado e Grafite",
+    "colors": [
+      "Verde-alpino",
+      "Dourado",
+      "Grafite"
+    ],
+    "gallery": [
+      "/assets/products/iphone-13-pro-max/01.jpeg",
+      "/assets/products/iphone-13-pro-max/02.jpeg",
+      "/assets/products/iphone-13-pro-max/03.webp",
+      "/assets/products/iphone-13-pro-max/04.webp",
+      "/assets/products/iphone-13-pro-max/05.webp",
+      "/assets/products/iphone-13-pro-max/06.jpeg",
+      "/assets/products/iphone-13-pro-max/07.webp",
+      "/assets/products/iphone-13-pro-max/08.jpeg",
+      "/assets/products/iphone-13-pro-max/09.jpeg",
+      "/assets/products/iphone-13-pro-max/10.jpeg",
+      "/assets/products/iphone-13-pro-max/11.jpeg",
+      "/assets/products/iphone-13-pro-max/12.jpeg",
+      "/assets/products/iphone-13-pro-max/13.jpeg",
+      "/assets/products/iphone-13-pro-max/14.jpeg",
+      "/assets/products/iphone-13-pro-max/15.jpeg",
+      "/assets/products/iphone-13-pro-max/16.jpeg",
+      "/assets/products/iphone-13-pro-max/17.jpeg",
+      "/assets/products/iphone-13-pro-max/18.jpeg",
+      "/assets/products/iphone-13-pro-max/19.webp",
+      "/assets/products/iphone-13-pro-max/20.webp",
+      "/assets/products/iphone-13-pro-max/21.webp",
+      "/assets/products/iphone-13-pro-max/23.webp",
+      "/assets/products/iphone-13-pro-max/24.webp"
+    ],
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.499,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 4.899,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 5.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 14",
+    "description": "Apple iPhone 14 - 128GB e 256GB - Preto e Branco",
+    "image": "/assets/products/iphone-14/preto-01.webp",
+    "status": "Lacrado",
+    "colors": [
+      {
+        "name": "Preto",
+        "gallery": [
+          "/assets/products/iphone-14/preto-01.webp",
+          "/assets/products/iphone-14/preto-02.webp",
+          "/assets/products/iphone-14/preto-03.webp",
+          "/assets/products/iphone-14/preto-04.webp",
+          "/assets/products/iphone-14/preto-05.webp",
+          "/assets/products/iphone-14/preto-06.webp",
+          "/assets/products/iphone-14/preto-07.webp",
+          "/assets/products/iphone-14/preto-08.webp",
+          "/assets/products/iphone-14/preto-09.webp"
+        ]
+      },
+      {
+        "name": "Branco",
+        "gallery": [
+          "/assets/products/iphone-14/branco-01.webp",
+          "/assets/products/iphone-14/branco-02.webp",
+          "/assets/products/iphone-14/branco-03.webp",
+          "/assets/products/iphone-14/branco-04.webp",
+          "/assets/products/iphone-14/branco-05.webp",
+          "/assets/products/iphone-14/branco-06.webp"
+        ]
+      }
+    ],
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 3.499,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 3.899,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 14 Plus",
+    "description": "iPhone 14 Plus 128GB e 256GB - Azul, Roxo e Amarelo",
+    "image": "/assets/products/iphone-14-plus/azul-01.webp",
+    "status": "Lacrado",
+    "colors": [
+      {
+        "name": "Azul",
+        "gallery": [
+          "/assets/products/iphone-14-plus/azul-01.webp",
+          "/assets/products/iphone-14-plus/azul-02.webp",
+          "/assets/products/iphone-14-plus/azul-03.webp",
+          "/assets/products/iphone-14-plus/azul-04.webp",
+          "/assets/products/iphone-14-plus/azul-05.webp"
+        ]
+      },
+      {
+        "name": "Roxo",
+        "gallery": [
+          "/assets/products/iphone-14-plus/roxo-01.webp",
+          "/assets/products/iphone-14-plus/roxo-02.webp",
+          "/assets/products/iphone-14-plus/roxo-03.webp",
+          "/assets/products/iphone-14-plus/roxo-04.webp",
+          "/assets/products/iphone-14-plus/roxo-05.webp"
+        ]
+      },
+      {
+        "name": "Amarelo",
+        "gallery": [
+          "/assets/products/iphone-14-plus/amarelo-01.webp",
+          "/assets/products/iphone-14-plus/amarelo-02.webp",
+          "/assets/products/iphone-14-plus/amarelo-03.jpeg",
+          "/assets/products/iphone-14-plus/amarelo-04.webp",
+          "/assets/products/iphone-14-plus/amarelo-05.webp"
+        ]
+      }
+    ],
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 3.899,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 4.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 14 Pro",
+    "description": "Apple iPhone 14 Pro 128GB e 256GB - Dourado, Preto, Roxo Profundo",
+    "image": "/assets/products/iphone-14-pro/dourado-01.webp",
+    "status": "Lacrado",
+    "colors": [
+      {
+        "name": "Dourado",
+        "gallery": [
+          "/assets/products/iphone-14-pro/dourado-01.webp",
+          "/assets/products/iphone-14-pro/dourado-02.webp",
+          "/assets/products/iphone-14-pro/dourado-03.webp",
+          "/assets/products/iphone-14-pro/dourado-04.webp",
+          "/assets/products/iphone-14-pro/dourado-05.jpeg",
+          "/assets/products/iphone-14-pro/dourado-06.webp",
+          "/assets/products/iphone-14-pro/dourado-07.webp",
+          "/assets/products/iphone-14-pro/dourado-08.webp",
+          "/assets/products/iphone-14-pro/dourado-09.webp",
+          "/assets/products/iphone-14-pro/dourado-10.webp"
+        ]
+      },
+      {
+        "name": "Preto",
+        "gallery": [
+          "/assets/products/iphone-14-pro/preto-01.jpeg",
+          "/assets/products/iphone-14-pro/preto-02.webp",
+          "/assets/products/iphone-14-pro/preto-03.webp",
+          "/assets/products/iphone-14-pro/preto-04.webp",
+          "/assets/products/iphone-14-pro/preto-05.webp",
+          "/assets/products/iphone-14-pro/preto-06.webp",
+          "/assets/products/iphone-14-pro/preto-07.webp",
+          "/assets/products/iphone-14-pro/preto-08.webp",
+          "/assets/products/iphone-14-pro/preto-09.webp"
+        ]
+      },
+      {
+        "name": "Roxo Profundo",
+        "gallery": [
+          "/assets/products/iphone-14-pro/roxo-profundo-01.webp",
+          "/assets/products/iphone-14-pro/roxo-profundo-02.webp",
+          "/assets/products/iphone-14-pro/roxo-profundo-03.webp",
+          "/assets/products/iphone-14-pro/roxo-profundo-04.webp",
+          "/assets/products/iphone-14-pro/roxo-profundo-05.webp"
+        ]
+      }
+    ],
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.499,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 4.899,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 14 Pro Max",
+    "description": "Apple iPhone 14 Pro Max - 128GB e 256GB - Branco",
+    "image": "/assets/products/iphone-14-pro-max/branco/01.webp",
+    "colors": [
+      {
+        "name": "Branco",
+        "gallery": [
+          "/assets/products/iphone-14-pro-max/branco/01.webp",
+          "/assets/products/iphone-14-pro-max/branco/02.webp",
+          "/assets/products/iphone-14-pro-max/branco/03.webp",
+          "/assets/products/iphone-14-pro-max/branco/04.webp"
+        ]
+      }
+    ],
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.999,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 5.399,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 15",
+    "description": "Apple iPhone 15 - 128GB e 256GB - Preto, Verde, Amarelo",
+    "image": "/assets/products/iphone-15/preto/01.webp",
+    "status": "Lacrado",
+    "colors": [
+      {
+        "name": "Preto",
+        "gallery": [
+          "/assets/products/iphone-15/preto/01.webp",
+          "/assets/products/iphone-15/preto/02.webp",
+          "/assets/products/iphone-15/preto/03.webp",
+          "/assets/products/iphone-15/preto/04.webp",
+          "/assets/products/iphone-15/preto/05.webp",
+          "/assets/products/iphone-15/preto/06.webp",
+          "/assets/products/iphone-15/preto/07.webp"
+        ]
+      },
+      {
+        "name": "Verde",
+        "gallery": [
+          "/assets/products/iphone-15/verde/01.jpeg",
+          "/assets/products/iphone-15/verde/02.jpeg",
+          "/assets/products/iphone-15/verde/03.jpeg",
+          "/assets/products/iphone-15/verde/04.jpeg",
+          "/assets/products/iphone-15/verde/05.jpeg",
+          "/assets/products/iphone-15/verde/06.jpeg",
+          "/assets/products/iphone-15/verde/07.jpeg",
+          "/assets/products/iphone-15/verde/08.jpeg",
+          "/assets/products/iphone-15/verde/09.jpeg"
+        ]
+      },
+      {
+        "name": "Amarelo",
+        "gallery": [
+          "/assets/products/iphone-15/amarelo/01.jpeg",
+          "/assets/products/iphone-15/amarelo/02.jpeg",
+          "/assets/products/iphone-15/amarelo/03.jpeg",
+          "/assets/products/iphone-15/amarelo/04.jpeg",
+          "/assets/products/iphone-15/amarelo/05.jpeg",
+          "/assets/products/iphone-15/amarelo/06.jpeg",
+          "/assets/products/iphone-15/amarelo/07.jpeg",
+          "/assets/products/iphone-15/amarelo/08.jpeg",
+          "/assets/products/iphone-15/amarelo/09.jpeg"
+        ]
+      }
+    ],
+    "gallery": [
+      "/assets/products/iphone-15/preto/01.webp",
+      "/assets/products/iphone-15/preto/02.webp",
+      "/assets/products/iphone-15/preto/03.webp",
+      "/assets/products/iphone-15/preto/04.webp",
+      "/assets/products/iphone-15/preto/05.webp",
+      "/assets/products/iphone-15/preto/06.webp",
+      "/assets/products/iphone-15/preto/07.webp"
+    ],
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.099,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 4.499,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 15 Plus",
+    "image": "/assets/products/iphone15.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.599,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 4.999,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 15 Pro",
+    "image": "/assets/products/iphone15pro.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 5.299,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 5.699,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 6.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 15 Pro Max",
+    "image": "/assets/products/iphone15pro.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 6.199,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 7.199,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 8.199,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 16",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 4.749,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 5.399,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 6.399,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 16 Plus",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 5.299,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 5.799,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 6.799,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 16 Pro",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "128 GB",
+        "price": "R$ 5.899,99"
+      },
+      {
+        "storage": "256 GB",
+        "price": "R$ 6.399,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 7.299,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 8.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 16 Pro Max",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 7.499,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 8.499,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 9.499,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 17e",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 5.999,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 17",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 8.299,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 9.299,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 17 Air",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 10.999,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 11.999,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 17 Pro",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 9.499,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 10.499,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 12.499,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 17 Pro Max",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 10.499,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 11.499,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 13.499,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 18 Pro",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 11.999,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 13.999,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 15.999,99"
+      }
+    ]
+  },
+  {
+    "name": "iPhone 18 Pro Max",
+    "image": "/assets/products/iphone16.png",
+    "status": "Lacrado",
+    "storages": [
+      {
+        "storage": "256 GB",
+        "price": "R$ 12.999,99"
+      },
+      {
+        "storage": "512 GB",
+        "price": "R$ 14.999,99"
+      },
+      {
+        "storage": "1 TB",
+        "price": "R$ 17.499,99"
+      },
+      {
+        "storage": "2 TB",
+        "price": "R$ 20.999,99"
+      }
+    ]
+  }
+];
+
+console.log(
+  "iPhoneCenter: catálogo agrupado:",
+  window.products.length,
+  "modelos"
+);

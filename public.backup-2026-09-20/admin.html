@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iPhoneCenter | Admin</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="admin-page">
+  <main class="admin-wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">PAINEL</div><h1>Solicitações recebidas</h1></div>
+      <button class="button ghost" onclick="loadLeads()">Atualizar</button>
+    </div>
+    <div id="adminStatus" class="status"></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Data</th><th>Nome</th><th>Telefone</th><th>E-mail</th><th>Produto</th><th>Cidade</th><th>Mensagem</th><th>Ação</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </main>
+  <script>
+    function esc(v){return String(v ?? "").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));}
+    async function loadLeads(){
+      const status=document.getElementById("adminStatus");
+      status.textContent="Carregando…";
+      try{
+        const r=await fetch("/api/admin/leads");
+        if(!r.ok) throw new Error("Não foi possível carregar os dados.");
+        const data=await r.json();
+        document.getElementById("rows").innerHTML=data.leads.map(x=>`
+          <tr><td>${esc(new Date(x.createdAt).toLocaleString("pt-BR"))}</td>
+          <td>${esc(x.name)}</td><td>${esc(x.phone)}</td><td>${esc(x.email)}</td>
+          <td>${esc(x.product)}</td><td>${esc(x.deliveryCity)}</td><td>${esc(x.message)}</td><td><button class="button ghost" onclick="openWhatsApp('${esc(x.phone)}','${esc(x.name)}')">WhatsApp</button></td></tr>`).join("");
+        status.textContent=data.leads.length+" solicitação(ões).";
+      }catch(e){status.textContent=e.message;}
+    }
+    function openWhatsApp(phone, name) {
+      const digits = String(phone || "").replace(/\D/g, "");
+      if (!digits) return;
+
+      const message = `Olá, ${name || "tudo bem"}! Estou entrando em contato pelo iPhoneCenter sobre sua solicitação.`;
+
+      window.open(
+        "https://wa.me/55" + digits.replace(/^55/, "") + "?text=" + encodeURIComponent(message),
+        "_blank",
+        "noopener"
+      );
+    }
+
+    loadLeads();
+  </script>
+</body>
+</html>

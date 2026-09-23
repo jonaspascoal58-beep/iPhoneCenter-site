@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Parcelamento | iPhoneCenter</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f5f6f8;
+      color: #111827;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.7px;
+    }
+
+    .logo span {
+      color: #2563eb;
+    }
+
+    .back {
+      text-decoration: none;
+      color: #374151;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    main {
+      width: 100%;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 35px 18px 50px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .intro h1 {
+      font-size: 30px;
+      margin-bottom: 9px;
+    }
+
+    .intro p {
+      color: #6b7280;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.05);
+    }
+
+    .field {
+      margin-bottom: 20px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #374151;
+    }
+
+    select,
+    input {
+      width: 100%;
+      height: 50px;
+      border: 1px solid #d1d5db;
+      border-radius: 11px;
+      padding: 0 14px;
+      font-size: 16px;
+      outline: none;
+      background: #fff;
+    }
+
+    select:focus,
+    input:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37,99,235,.10);
+    }
+
+    .summary {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 18px;
+      margin-top: 5px;
+      margin-bottom: 22px;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .summary-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .summary-row strong {
+      color: #111827;
+    }
+
+    .installment {
+      border: 2px solid #2563eb;
+      background: #eff6ff;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .installment small {
+      display: block;
+      color: #4b5563;
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
+
+    .installment strong {
+      display: block;
+      color: #2563eb;
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    .installment span {
+      color: #6b7280;
+      font-size: 13px;
+    }
+
+    .button {
+      width: 100%;
+      height: 52px;
+      border: 0;
+      border-radius: 11px;
+      background: #111827;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .button:hover {
+      background: #1f2937;
+    }
+
+    .info {
+      margin-top: 18px;
+      text-align: center;
+      color: #6b7280;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 16px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      main {
+        padding: 28px 14px 40px;
+      }
+
+      .intro h1 {
+        font-size: 26px;
+      }
+
+      .card {
+        padding: 19px;
+        border-radius: 15px;
+      }
+
+      .installment strong {
+        font-size: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">iPhone<span>Center</span></div>
+
+    <a href="/" class="back">← Voltar</a>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <h1>Parcelamento</h1>
+      <p>
+        Consulte as opções de pagamento disponíveis para o seu produto.
+      </p>
+    </section>
+
+    <section class="card">
+
+      <div class="field">
+        <label for="produto">Produto</label>
+
+        <select id="produto">
+          <option value="1499.99">iPhone X — 64 GB</option>
+          <option value="1699.99">iPhone X — 256 GB</option>
+          <option value="1999.99">iPhone 11 — 64 GB</option>
+          <option value="2299.99">iPhone 11 — 128 GB</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="parcelas">Quantidade de parcelas</label>
+
+        <select id="parcelas">
+          <option value="1">1x</option>
+          <option value="2">2x</option>
+          <option value="3">3x</option>
+          <option value="4">4x</option>
+          <option value="5">5x</option>
+          <option value="6">6x</option>
+          <option value="7">7x</option>
+          <option value="8">8x</option>
+          <option value="9">9x</option>
+          <option value="10">10x</option>
+          <option value="11">11x</option>
+          <option value="12">12x</option>
+        </select>
+      </div>
+
+      <div class="summary">
+
+        <div class="summary-row">
+          <span>Produto</span>
+          <strong id="nomeProduto">iPhone X — 64 GB</strong>
+        </div>
+
+        <div class="summary-row">
+          <span>Valor total</span>
+          <strong id="valorTotal">R$ 1.499,99</strong>
+        </div>
+
+      </div>
+
+      <div class="installment">
+
+        <small>Valor estimado da parcela</small>
+
+        <strong id="valorParcela">
+          R$ 1.499,99
+        </strong>
+
+        <span id="textoParcelas">
+          1x sem juros
+        </span>
+
+      </div>
+
+      <button class="button" type="button" id="continuar">
+        Continuar
+      </button>
+
+      <div class="info">
+        Os valores apresentados são uma simulação.
+        As condições finais podem variar conforme a forma de pagamento escolhida.
+      </div>
+
+    </section>
+
+  </main>
+
+  <script>
+    const produto = document.getElementById("produto");
+    const parcelas = document.getElementById("parcelas");
+    
+    // Recebe automaticamente o produto, armazenamento e preço selecionados
+    // no catálogo da iPhoneCenter.
+    const params = new URLSearchParams(window.location.search);
+    const produtoNome = params.get("product");
+    const produtoStorage = params.get("storage");
+    const produtoPreco = params.get("price");
+
+    if (produtoNome && produtoStorage && produtoPreco) {
+      const valorNumerico = Number(
+        produtoPreco
+          .replace("R$", "")
+          .replace(/\./g, "")
+          .replace(",", ".")
+          .trim()
+      );
+
+      if (!Number.isNaN(valorNumerico)) {
+        const textoProduto = `${produtoNome} — ${produtoStorage}`;
+
+        let opcao = Array.from(produto.options).find(
+          option => option.text === textoProduto
+        );
+
+        if (!opcao) {
+          opcao = document.createElement("option");
+          opcao.textContent = textoProduto;
+          produto.appendChild(opcao);
+        }
+
+        opcao.value = valorNumerico.toFixed(2);
+        produto.value = opcao.value;
+      }
+    }
+
+
+    const nomeProduto = document.getElementById("nomeProduto");
+    const valorTotal = document.getElementById("valorTotal");
+    const valorParcela = document.getElementById("valorParcela");
+    const textoParcelas = document.getElementById("textoParcelas");
+    const continuar = document.getElementById("continuar");
+
+    function dinheiro(valor) {
+      return valor.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+      });
+    }
+
+    function atualizar() {
+      const valor = Number(produto.value);
+      const qtd = Number(parcelas.value);
+
+      const nome =
+        produto.options[produto.selectedIndex].text;
+
+      const parcela = valor / qtd;
+
+      nomeProduto.textContent = nome;
+      valorTotal.textContent = dinheiro(valor);
+      valorParcela.textContent = dinheiro(parcela);
+
+      textoParcelas.textContent =
+        qtd === 1
+          ? "1x sem juros"
+          : `${qtd}x de ${dinheiro(parcela)} sem juros`;
+    }
+
+    produto.addEventListener("change", atualizar);
+    parcelas.addEventListener("change", atualizar);
+
+    continuar.addEventListener("click", function () {
+      alert(
+        "Simulação realizada com sucesso. Verifique as condições antes de finalizar sua compra."
+      );
+    });
+
+    atualizar();
+  </script>
+
+</body>
+</html>

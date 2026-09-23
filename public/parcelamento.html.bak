@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcelamento — iPhoneCenter</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .parcelamento-page {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .parcelamento-box {
+      background: #fff;
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .parcelamento-box h1 {
+      margin-bottom: 8px;
+    }
+
+    .parcelamento-box .produto {
+      margin-bottom: 24px;
+      opacity: .75;
+    }
+
+    .parcelas {
+      display: grid;
+      gap: 8px;
+    }
+
+    .parcela {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: #f5f5f5;
+    }
+
+    .parcela strong {
+      color: #16a34a;
+    }
+
+    .observacao {
+      margin-top: 20px;
+      font-size: 13px;
+      opacity: .65;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="parcelamento-page">
+    <div class="parcelamento-box">
+      <div class="eyebrow">PAGAMENTO</div>
+      <h1>Opções de parcelamento</h1>
+      <p class="produto">iPhone 15 — 128 GB — R$ 2.899,99</p>
+
+      <div class="parcelas">
+        <div class="parcela"><span>1x</span><strong>R$ 2.899,99</strong></div>
+        <div class="parcela"><span>2x</span><strong>R$ 1.508,00</strong></div>
+        <div class="parcela"><span>3x</span><strong>R$ 1.019,33</strong></div>
+        <div class="parcela"><span>4x</span><strong>R$ 774,75</strong></div>
+        <div class="parcela"><span>5x</span><strong>R$ 628,50</strong></div>
+        <div class="parcela"><span>6x</span><strong>R$ 531,67</strong></div>
+        <div class="parcela"><span>7x</span><strong>R$ 462,50</strong></div>
+        <div class="parcela"><span>8x</span><strong>R$ 409,87</strong></div>
+        <div class="parcela"><span>9x</span><strong>R$ 368,44</strong></div>
+        <div class="parcela"><span>10x</span><strong>R$ 336,40</strong></div>
+        <div class="parcela"><span>11x</span><strong>R$ 310,04</strong></div>
+        <div class="parcela"><span>12x</span><strong>R$ 287,08</strong></div>
+      </div>
+
+      <p class="observacao">
+        Valores calculados conforme as condições de parcelamento apresentadas no site.
+      </p>
+    </div>
+  </main>
+</body>
+</html>
