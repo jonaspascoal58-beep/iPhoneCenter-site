@@ -4971,3 +4971,233 @@ img {
   }
 }
 
+
+/* =========================================================
+   IPHONE CENTER — RESPONSIVIDADE GERAL
+   Ajustes para celulares, tablets e computadores
+   ========================================================= */
+
+/* Prevenir rolagem horizontal indesejada */
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* Conteúdo principal */
+main,
+section,
+.container {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Cabeçalho para computadores */
+.header-main {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.site-logo {
+  flex-shrink: 0;
+}
+
+.header-search {
+  min-width: 0;
+}
+
+.header-actions {
+  flex-shrink: 0;
+}
+
+/* Categorias com rolagem independente */
+.category-bar {
+  justify-content: flex-start;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Catálogo de produtos */
+#produtos .cards,
+.featured-section #produtos .cards {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+  justify-content: stretch !important;
+  gap: 14px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 12px !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}
+
+#produtos .product-card,
+.featured-section #produtos .product-card {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 100%;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+#produtos .product-card img,
+.featured-section #produtos .product-card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Evitar que textos e botões estourem os cartões */
+#produtos .product-card *,
+.featured-section #produtos .product-card * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+#produtos .product-card button,
+#produtos .product-card a,
+.featured-section #produtos .product-card button,
+.featured-section #produtos .product-card a {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Tablets e telas intermediárias */
+@media (min-width: 650px) {
+  #produtos .cards,
+  .featured-section #produtos .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    padding: 18px !important;
+  }
+
+  .header-main {
+    gap: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Computadores */
+@media (min-width: 1000px) {
+  #produtos .cards,
+  .featured-section #produtos .cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    padding: 22px !important;
+  }
+
+  .header-main {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .category-bar {
+    justify-content: center;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .header-main {
+    min-height: auto;
+    padding: 12px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .site-logo {
+    max-width: 65%;
+  }
+
+  .header-search {
+    order: 3;
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    height: 42px;
+  }
+
+  .header-actions {
+    gap: 10px;
+    margin-left: auto;
+  }
+
+  .category-bar {
+    min-height: 42px;
+    padding: 0 12px;
+    gap: 22px;
+    justify-content: flex-start;
+  }
+
+  #produtos .cards,
+  .featured-section #produtos .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    padding: 10px !important;
+  }
+
+  #produtos .product-card,
+  .featured-section #produtos .product-card {
+    border-radius: 10px;
+  }
+
+  #produtos .product-card button,
+  .featured-section #produtos .product-card button {
+    font-size: 12px;
+    padding: 10px 8px;
+  }
+}
+
+/* Celulares estreitos */
+@media (max-width: 360px) {
+  #produtos .cards,
+  .featured-section #produtos .cards {
+    gap: 8px !important;
+    padding: 8px !important;
+  }
+
+  .header-main {
+    padding: 9px;
+    gap: 9px;
+  }
+
+  .header-actions {
+    gap: 7px;
+  }
+}
+
+/* Respeitar preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* =========================================================
+   FIM DOS AJUSTES DE RESPONSIVIDADE
+   ========================================================= */
