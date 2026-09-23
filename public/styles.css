@@ -5523,3 +5523,212 @@ section,
 /* =========================================================
    FIM — ACABAMENTO PREMIUM DOS PRODUTOS
    ========================================================= */
+
+
+/* =========================================================
+   GALERIA — MINIATURAS DEFINITIVAS
+   ========================================================= */
+
+#produtos .product-gallery {
+  width: 100% !important;
+  min-width: 0 !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}
+
+#produtos .gallery-thumbs {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 12px 0 0 !important;
+  padding: 5px 12px 8px !important;
+  box-sizing: border-box !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scrollbar-width: none !important;
+}
+
+#produtos .gallery-thumbs::-webkit-scrollbar {
+  display: none !important;
+}
+
+#produtos .gallery-thumb {
+  flex: 0 0 64px !important;
+  width: 64px !important;
+  height: 64px !important;
+  min-width: 64px !important;
+  min-height: 64px !important;
+  max-width: 64px !important;
+  max-height: 64px !important;
+  padding: 4px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  border: 1px solid #ddd !important;
+  border-radius: 9px !important;
+  background: #fff !important;
+  overflow: hidden !important;
+}
+
+#produtos .gallery-thumb img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#produtos .gallery-thumb.active {
+  border: 2px solid #222 !important;
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  #produtos .gallery-thumbs {
+    gap: 9px !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  #produtos .gallery-thumb {
+    flex: 0 0 64px !important;
+    width: 64px !important;
+    height: 64px !important;
+    min-width: 64px !important;
+    min-height: 64px !important;
+    max-width: 64px !important;
+    max-height: 64px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  #produtos .gallery-thumb {
+    flex: 0 0 60px !important;
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    min-height: 60px !important;
+    max-width: 60px !important;
+    max-height: 60px !important;
+  }
+}
+
+
+/* =========================================================
+   CORREÇÃO FINAL — PRIMEIRA MINIATURA NÃO CORTAR
+   ========================================================= */
+
+#produtos .gallery-thumbs {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
+  width: calc(100% - 2px) !important;
+  margin-left: 1px !important;
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
+#produtos .gallery-thumb:first-child {
+  margin-left: 2px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+#produtos .gallery-thumb:first-child img {
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 3 !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* garante que o conteúdo da primeira miniatura tenha espaço */
+#produtos .gallery-thumb:first-child {
+  padding: 4px !important;
+  overflow: hidden !important;
+}
+
+@media (max-width: 600px) {
+  #produtos .gallery-thumbs {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+}
+
+/* =========================================================
+   MINIATURAS — ÁREA INTERNA DA IMAGEM
+   ========================================================= */
+
+#produtos .gallery-thumb {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 3px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+#produtos .gallery-thumb-inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+#produtos .gallery-thumb-inner img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+}
+
+
+/* SWIPE HORIZONTAL DA FOTO PRINCIPAL */
+#produtos .gallery-main {
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+}
+
+#produtos .gallery-main:active {
+  cursor: grabbing;
+}
+
+#produtos .gallery-main-image {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}

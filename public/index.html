@@ -584,14 +584,112 @@ function changeProductImage(button, imageUrl) {
 
   mainImage.src = imageUrl;
 
-  gallery.querySelectorAll(".gallery-thumb").forEach((thumb) => {
+  const thumbs = Array.from(gallery.querySelectorAll(".gallery-thumb"));
+
+  thumbs.forEach((thumb) => {
     thumb.classList.remove("active");
   });
 
   button.classList.add("active");
+
+  const index = thumbs.indexOf(button);
+  if (index >= 0) {
+    gallery.dataset.galleryIndex = String(index);
+  }
+}
+
+function setupProductSwipe(gallery) {
+  if (!gallery) return;
+
+  const main = gallery.querySelector(".gallery-main");
+  const thumbs = Array.from(gallery.querySelectorAll(".gallery-thumb"));
+
+  if (!main || thumbs.length < 2) return;
+
+  gallery.dataset.swipeReady = "true";
+
+  if (!gallery.dataset.galleryIndex) {
+    gallery.dataset.galleryIndex = "0";
+  }
+
+  let startX = 0;
+  let startY = 0;
+  let pointerActive = false;
+
+  main.style.touchAction = "pan-y";
+
+  main.addEventListener("pointerdown", function(event) {
+    if (event.pointerType === "mouse" && event.button !== 0) return;
+
+    pointerActive = true;
+    startX = event.clientX;
+    startY = event.clientY;
+
+    try {
+      main.setPointerCapture(event.pointerId);
+    } catch (e) {}
+  });
+
+  main.addEventListener("pointerup", function(event) {
+    if (!pointerActive) return;
+
+    pointerActive = false;
+
+    const deltaX = event.clientX - startX;
+    const deltaY = event.clientY - startY;
+
+    if (Math.abs(deltaX) < 35) return;
+    if (Math.abs(deltaX) <= Math.abs(deltaY)) return;
+
+    let index = Number(gallery.dataset.galleryIndex || 0);
+
+    if (deltaX < 0) {
+      index++;
+      if (index >= thumbs.length) index = 0;
+    } else {
+      index--;
+      if (index < 0) index = thumbs.length - 1;
+    }
+
+    thumbs[index].click();
+  });
+
+  main.addEventListener("pointercancel", function() {
+    pointerActive = false;
+  });
+}
+
+function setupAllProductSwipes() {
+  document
+    .querySelectorAll("#produtos .product-gallery")
+    .forEach(function (gallery) {
+      gallery.dataset.swipeReady = "";
+      setupProductSwipe(gallery);
+    });
+}
+
+function enableProductSwipes() {
+  setupAllProductSwipes();
+
+  if (!window.productSwipeObserver) {
+    window.productSwipeObserver = new MutationObserver(function () {
+      setupAllProductSwipes();
+    });
+
+    const produtos = document.querySelector("#produtos");
+
+    if (produtos) {
+      window.productSwipeObserver.observe(produtos, {
+        childList: true,
+        subtree: true
+      });
+    }
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+
+  enableProductSwipes();
 
   const searchForm = document.querySelector(".header-search");
   const searchInput = searchForm ? searchForm.querySelector("input") : null;
@@ -705,11 +803,14 @@ document.addEventListener("DOMContentLoaded", function () {
                       onclick="changeProductImage(this, '${img}')"
                       aria-label="Ver imagem ${i + 1} de ${product.name}"
                     >
-                      <img
-                        src="${img}"
-                        alt="${product.name} - imagem ${i + 1}"
-                        loading="lazy"
-                      >
+                      <span class="gallery-thumb-inner">
+                        <img
+                          src="${img}"
+                          alt="${product.name} - imagem ${i + 1}"
+                          loading="eager"
+                          decoding="async"
+                        >
+                      </span>
                     </button>
                   `).join("")}
                 </div>
@@ -1132,9 +1233,15 @@ function selectColor(button) {
       class="gallery-thumb ${index === 0 ? "active" : ""}"
       onclick="changeProductImage(this, '${img}')"
     >
-      <img src="${img}" alt="Imagem ${index + 1}">
+      <span class="gallery-thumb-inner">
+        <img src="${img}" alt="Imagem ${index + 1}">
+      </span>
     </button>
   `).join("");
+
+  gallery.dataset.swipeReady = "";
+  gallery.dataset.galleryIndex = "0";
+  setupProductSwipe(gallery);
 }
 
 function selectStorage(button, productIndex, storageIndex) {
