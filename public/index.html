@@ -1385,7 +1385,7 @@ function selectColor(button) {
     }
   }
 
-  // Outras situações: galeria original
+  // Produtos com seleção de cor: usa a galeria da cor selecionada
   else {
     const productIndex = Array.from(
       document.querySelectorAll(".product-card")
@@ -1393,7 +1393,18 @@ function selectColor(button) {
 
     const product = window.products[productIndex];
 
-    if (product && Array.isArray(product.gallery)) {
+    if (product && Array.isArray(product.colors)) {
+      const selectedColor = product.colors.find(
+        item => (typeof item === "string" ? item : item.name) === color
+      );
+
+      if (selectedColor && Array.isArray(selectedColor.gallery)) {
+        images = selectedColor.gallery;
+      }
+    }
+
+    // Se não houver galeria por cor, mantém a galeria original
+    if (!images.length && product && Array.isArray(product.gallery)) {
       images = product.gallery;
     }
   }
