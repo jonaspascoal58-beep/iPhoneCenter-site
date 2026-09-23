@@ -1,7 +1,7 @@
 window.products = [
   {
     "name": "iPhone XR",
-"description": "Seminovo iPhone XR 64GB e 128GB - Branco - Condição Excelente",
+    "description": "Seminovo iPhone XR 64GB e 128GB - Branco - Condição Excelente",
     "image": "/assets/products/iphone-xr/01-galeria.webp",
     "colors": [
       "Branco"
@@ -41,11 +41,15 @@ window.products = [
     "storages": [
       {
         "storage": "64 GB",
-        "price": "R$ 1.389,99"
+        "price": "R$ 1.200,00"
+      },
+      {
+        "storage": "128 GB",
+        "price": "R$ 1.450,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 1.449,99"
+        "price": "R$ 1.650,00"
       }
     ]
   },
@@ -69,17 +73,21 @@ window.products = [
     "storages": [
       {
         "storage": "64 GB",
-        "price": "R$ 1.999,99"
+        "price": "R$ 1.690,00"
+      },
+      {
+        "storage": "128 GB",
+        "price": "R$ 1.850,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 2.299,99"
+        "price": "R$ 1.950,00"
       }
     ]
   },
   {
     "name": "iPhone 11 Pro Max",
-"description": "Seminovo iPhone 11 Pro Max 64GB, 256GB E 512GB - Prata, Verde - Condição Excelente",
+    "description": "Seminovo iPhone 11 Pro Max 64GB, 256GB E 512GB - Prata, Verde - Condição Excelente",
     "image": "/assets/products/iphone-11-pro-max/01-galeria.webp",
     "colors": [
       "Prata",
@@ -101,16 +109,16 @@ window.products = [
     "storages": [
       {
         "storage": "64 GB",
-        "price": "R$ 2.199,99"
+        "price": "R$ 1.900,00"
+      },
+      {
+        "storage": "128 GB",
+        "price": "R$ 2.000,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 2.499,99"
-      },
-    {
-      "storage": "512 GB",
-      "price": "R$ 0,00"
-    }
+        "price": "R$ 2.200,00"
+      }
     ]
   },
   {
@@ -118,30 +126,30 @@ window.products = [
     "image": "/assets/products/iphone16.png",
     "description": "Seminovo iPhone 12 mini 64GB, 128GB e 256GB - Branco, Azul, Vermelho e Verde- Condição Excelente",
     "colors": [
-    "Branco",
-    "Azul",
-    "Vermelho",
-    "Verde"
-  ],
-  "gallery": [
-    "/assets/products/iphone-12-mini/01-galeria.webp",
-    "/assets/products/iphone-12-mini/02-galeria.webp",
-    "/assets/products/iphone-12-mini/03-galeria.webp",
-    "/assets/products/iphone-12-mini/04-galeria.webp"
-  ],
-  "status": "Seminovo",
+      "Branco",
+      "Azul",
+      "Vermelho",
+      "Verde"
+    ],
+    "gallery": [
+      "/assets/products/iphone-12-mini/01-galeria.webp",
+      "/assets/products/iphone-12-mini/02-galeria.webp",
+      "/assets/products/iphone-12-mini/03-galeria.webp",
+      "/assets/products/iphone-12-mini/04-galeria.webp"
+    ],
+    "status": "Seminovo",
     "storages": [
       {
         "storage": "64 GB",
-        "price": "R$ 1.199,99"
+        "price": "R$ 1.500,00"
       },
       {
         "storage": "128 GB",
-        "price": "R$ 1.999,99"
+        "price": "R$ 1.650,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 2.299,99"
+        "price": "R$ 1.800,00"
       }
     ]
   },
@@ -150,29 +158,29 @@ window.products = [
     "image": "/assets/products/iphone-12/branco/branco-01.webp",
     "description": "Seminovo iPhone 12 64GB, 128GB e 256GB - Branco, Preto, Roxo - Condição Excelente",
     "colors": [
-    "Branco",
-    "Preto",
-    "Roxo"
-  ],
+      "Branco",
+      "Preto",
+      "Roxo"
+    ],
     "gallery": [
-    "/assets/products/iphone-12/branco/branco-01.webp",
-    "/assets/products/iphone-12/branco/branco-02.webp",
-    "/assets/products/iphone-12/branco/branco-03.webp",
-    "/assets/products/iphone-12/branco/branco-04.webp"
-  ],
+      "/assets/products/iphone-12/branco/branco-01.webp",
+      "/assets/products/iphone-12/branco/branco-02.webp",
+      "/assets/products/iphone-12/branco/branco-03.webp",
+      "/assets/products/iphone-12/branco/branco-04.webp"
+    ],
     "status": "Seminovo",
     "storages": [
       {
         "storage": "64 GB",
-        "price": "R$ 1.449,99"
+        "price": "R$ 1.600,00"
       },
       {
         "storage": "128 GB",
-        "price": "R$ 2.099,99"
+        "price": "R$ 1.750,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 2.299,99"
+        "price": "R$ 1.900,00"
       }
     ]
   },
@@ -181,27 +189,27 @@ window.products = [
     "image": "/assets/products/iphone-12-pro/dourado/dourado-01.webp",
     "description": "Seminovo iPhone 12 Pro 128GB, 256GB, 512GB - Dourado - Condição Excelente",
     "colors": [
-    "Dourado"
-  ],
+      "Dourado"
+    ],
     "gallery": [
-    "/assets/products/iphone-12-pro/dourado/dourado-01.webp",
-    "/assets/products/iphone-12-pro/dourado/dourado-02.webp",
-    "/assets/products/iphone-12-pro/dourado/dourado-03.webp",
-    "/assets/products/iphone-12-pro/dourado/dourado-04.webp"
-  ],
+      "/assets/products/iphone-12-pro/dourado/dourado-01.webp",
+      "/assets/products/iphone-12-pro/dourado/dourado-02.webp",
+      "/assets/products/iphone-12-pro/dourado/dourado-03.webp",
+      "/assets/products/iphone-12-pro/dourado/dourado-04.webp"
+    ],
     "status": "Seminovo",
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 2.199,99"
+        "price": "R$ 2.050,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 2.399,99"
+        "price": "R$ 2.150,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 2.699,99"
+        "price": "R$ 2.300,00"
       }
     ]
   },
@@ -210,29 +218,29 @@ window.products = [
     "image": "/assets/products/iphone-12-pro-max/grafite/grafite-01.webp",
     "description": "Seminovo iPhone 12 Pro Max 128GB, 256GB e 512GB - Grafite, Prata, Azul Pacífico - Condição Excelente",
     "colors": [
-    "Grafite",
-    "Prata",
-    "Azul Pacífico"
-  ],
+      "Grafite",
+      "Prata",
+      "Azul Pacífico"
+    ],
     "gallery": [
-    "/assets/products/iphone-12-pro-max/grafite/grafite-01.webp",
-    "/assets/products/iphone-12-pro-max/grafite/grafite-02.webp",
-    "/assets/products/iphone-12-pro-max/grafite/grafite-03.webp",
-    "/assets/products/iphone-12-pro-max/grafite/grafite-04.webp"
-  ],
+      "/assets/products/iphone-12-pro-max/grafite/grafite-01.webp",
+      "/assets/products/iphone-12-pro-max/grafite/grafite-02.webp",
+      "/assets/products/iphone-12-pro-max/grafite/grafite-03.webp",
+      "/assets/products/iphone-12-pro-max/grafite/grafite-04.webp"
+    ],
     "status": "Seminovo",
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 2.499,99"
+        "price": "R$ 2.100,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 2.699,99"
+        "price": "R$ 2.250,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 2.999,99"
+        "price": "R$ 2.350,00"
       }
     ]
   },
@@ -263,11 +271,11 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 3.299,99"
+        "price": "R$ 2.100,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 3.699,99"
+        "price": "R$ 2.250,00"
       }
     ]
   },
@@ -309,11 +317,11 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 3.399,99"
+        "price": "R$ 2.100,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 3.799,99"
+        "price": "R$ 2.200,00"
       }
     ]
   },
@@ -344,15 +352,15 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 4.099,99"
+        "price": "R$ 2.450,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 4.399,99"
+        "price": "R$ 2.650,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 4.799,99"
+        "price": "R$ 2.800,00"
       }
     ]
   },
@@ -394,15 +402,15 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 4.499,99"
+        "price": "R$ 2.550,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 4.899,99"
+        "price": "R$ 2.750,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 5.299,99"
+        "price": "R$ 2.850,00"
       }
     ]
   },
@@ -441,11 +449,11 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 3.499,99"
+        "price": "R$ 2.350,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 3.899,99"
+        "price": "R$ 2.450,00"
       }
     ]
   },
@@ -489,11 +497,11 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 3.899,99"
+        "price": "R$ 2.390,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 4.299,99"
+        "price": "R$ 2.490,00"
       }
     ]
   },
@@ -546,11 +554,11 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 4.499,99"
+        "price": "R$ 2.990,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 4.899,99"
+        "price": "R$ 3.100,00"
       }
     ]
   },
@@ -573,11 +581,11 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 4.999,99"
+        "price": "R$ 3.100,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 5.399,99"
+        "price": "R$ 3.250,00"
       }
     ]
   },
@@ -640,11 +648,11 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 4.099,99"
+        "price": "R$ 2.950,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 4.499,99"
+        "price": "R$ 3.050,00"
       }
     ]
   },
@@ -655,11 +663,11 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 4.599,99"
+        "price": "R$ 3.000,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 4.999,99"
+        "price": "R$ 3.150,00"
       }
     ]
   },
@@ -670,15 +678,15 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 5.299,99"
+        "price": "R$ 3.100,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 5.699,99"
+        "price": "R$ 3.250,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 6.299,99"
+        "price": "R$ 3.350,00"
       }
     ]
   },
@@ -689,15 +697,15 @@ window.products = [
     "storages": [
       {
         "storage": "256 GB",
-        "price": "R$ 6.199,99"
+        "price": "R$ 3.450,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 7.199,99"
+        "price": "R$ 3.690,00"
       },
       {
         "storage": "1 TB",
-        "price": "R$ 8.199,99"
+        "price": "R$ 3.990,00"
       }
     ]
   },
@@ -708,15 +716,15 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 4.749,99"
+        "price": "R$ 3.950,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 5.399,99"
+        "price": "R$ 4.050,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 6.399,99"
+        "price": "R$ 4.150,00"
       }
     ]
   },
@@ -727,15 +735,15 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 5.299,99"
+        "price": "R$ 4.000,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 5.799,99"
+        "price": "R$ 4.150,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 6.799,99"
+        "price": "R$ 4.250,00"
       }
     ]
   },
@@ -746,19 +754,19 @@ window.products = [
     "storages": [
       {
         "storage": "128 GB",
-        "price": "R$ 5.899,99"
+        "price": "R$ 4.150,00"
       },
       {
         "storage": "256 GB",
-        "price": "R$ 6.399,99"
+        "price": "R$ 4.250,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 7.299,99"
+        "price": "R$ 4.450,00"
       },
       {
         "storage": "1 TB",
-        "price": "R$ 8.299,99"
+        "price": "R$ 4.800,00"
       }
     ]
   },
@@ -769,15 +777,15 @@ window.products = [
     "storages": [
       {
         "storage": "256 GB",
-        "price": "R$ 7.499,99"
+        "price": "R$ 4.450,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 8.499,99"
+        "price": "R$ 4.690,00"
       },
       {
         "storage": "1 TB",
-        "price": "R$ 9.499,99"
+        "price": "R$ 4.990,00"
       }
     ]
   },
@@ -788,7 +796,7 @@ window.products = [
     "storages": [
       {
         "storage": "256 GB",
-        "price": "R$ 5.999,99"
+        "price": "R$ 5.050,00"
       }
     ]
   },
@@ -799,11 +807,11 @@ window.products = [
     "storages": [
       {
         "storage": "256 GB",
-        "price": "R$ 8.299,99"
+        "price": "R$ 5.250,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 9.299,99"
+        "price": "R$ 5.450,00"
       }
     ]
   },
@@ -814,11 +822,11 @@ window.products = [
     "storages": [
       {
         "storage": "256 GB",
-        "price": "R$ 10.999,99"
+        "price": "R$ 5.300,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 11.999,99"
+        "price": "R$ 5.500,00"
       }
     ]
   },
@@ -829,15 +837,15 @@ window.products = [
     "storages": [
       {
         "storage": "256 GB",
-        "price": "R$ 9.499,99"
+        "price": "R$ 6.300,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 10.499,99"
+        "price": "R$ 6.590,00"
       },
       {
         "storage": "1 TB",
-        "price": "R$ 12.499,99"
+        "price": "R$ 6.800,00"
       }
     ]
   },
@@ -848,15 +856,15 @@ window.products = [
     "storages": [
       {
         "storage": "256 GB",
-        "price": "R$ 10.499,99"
+        "price": "R$ 7.500,00"
       },
       {
         "storage": "512 GB",
-        "price": "R$ 11.499,99"
+        "price": "R$ 7.790,90"
       },
       {
         "storage": "1 TB",
-        "price": "R$ 13.499,99"
+        "price": "R$ 8.400,00"
       }
     ]
   },

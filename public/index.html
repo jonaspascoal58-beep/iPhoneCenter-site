@@ -9,6 +9,23 @@
 </head>
 
 <body>
+<script>
+window.addEventListener("error", function(event) {
+  const box = document.createElement("pre");
+  box.id = "debug-js-error";
+  box.style.cssText =
+    "position:fixed;top:0;left:0;right:0;z-index:999999;" +
+    "background:#fff;color:#b00020;padding:15px;font-size:13px;" +
+    "white-space:pre-wrap;max-height:50vh;overflow:auto;";
+  box.textContent =
+    "ERRO JAVASCRIPT:\\n" +
+    (event.message || "Erro desconhecido") +
+    "\\nArquivo: " + (event.filename || "") +
+    "\\nLinha: " + (event.lineno || "");
+  document.body.appendChild(box);
+});
+</script>
+
 
 <header class="site-header">
 
@@ -607,8 +624,144 @@ function changeProductImage(button, imageUrl) {
   }
 }
 
+function setupProductViewer() {
+  const viewer = document.getElementById("productImageViewer");
+
+  if (!viewer || viewer.dataset.ready === "true") return;
+
+  const viewerImage = document.getElementById("productViewerImage");
+  const closeButton = viewer.querySelector(".product-viewer-close");
+  const prevButton = viewer.querySelector(".product-viewer-prev");
+  const nextButton = viewer.querySelector(".product-viewer-next");
+
+  if (!viewerImage || !closeButton || !prevButton || !nextButton) {
+    return;
+  }
+
+  viewer.dataset.ready = "true";
+
+  function updateCounter(gallery) {
+    const counter = document.getElementById("productViewerCounter");
+    if (!counter || !gallery) return;
+
+    const thumbs = Array.from(
+      gallery.querySelectorAll(".gallery-thumb")
+    );
+
+    const index = Number(gallery.dataset.galleryIndex || 0);
+
+    counter.textContent =
+      Math.min(index + 1, thumbs.length) + " / " + thumbs.length;
+  }
+
+  function changeImage(direction) {
+    const gallery = viewer._gallery;
+
+    if (!gallery) return;
+
+    const thumbs = Array.from(
+      gallery.querySelectorAll(".gallery-thumb")
+    );
+
+    if (thumbs.length < 2) return;
+
+    let index = Number(gallery.dataset.galleryIndex || 0);
+
+    index += direction;
+
+    if (index >= thumbs.length) index = 0;
+    if (index < 0) index = thumbs.length - 1;
+
+    thumbs[index].click();
+
+    const mainImage =
+      gallery.querySelector(".gallery-main-image");
+
+    if (mainImage && viewerImage) {
+      viewerImage.src = mainImage.src;
+    }
+
+    updateCounter(gallery);
+  }
+
+  window.openProductImageViewer = function(gallery) {
+    if (!gallery || !viewerImage) return;
+
+    const mainImage =
+      gallery.querySelector(".gallery-main-image");
+
+    if (!mainImage) return;
+
+    viewer._gallery = gallery;
+    viewerImage.src = mainImage.src;
+
+    viewer.classList.add("active");
+    viewer.setAttribute("aria-hidden", "false");
+
+    document.body.classList.add("product-viewer-open");
+
+    updateCounter(gallery);
+  };
+
+  window.closeProductImageViewer = function() {
+    viewer.classList.remove("active");
+    viewer.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("product-viewer-open");
+  };
+
+  closeButton.addEventListener("click", function () {
+    window.closeProductImageViewer();
+  });
+
+  prevButton.addEventListener("click", function () {
+    changeImage(-1);
+  });
+
+  nextButton.addEventListener("click", function () {
+    changeImage(1);
+  });
+
+  viewer.addEventListener("click", function (event) {
+    if (event.target === viewer) {
+      window.closeProductImageViewer();
+    }
+  });
+
+  document.addEventListener("click", function (event) {
+    const mainImage = event.target.closest(
+      "#produtos .gallery-main-image"
+    );
+
+    if (!mainImage) return;
+
+    const gallery = mainImage.closest(".product-gallery");
+
+    if (gallery && window.openProductImageViewer) {
+      window.openProductImageViewer(gallery);
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (!viewer.classList.contains("active")) return;
+
+    if (event.key === "Escape") {
+      window.closeProductImageViewer();
+    }
+
+    if (event.key === "ArrowLeft") {
+      changeImage(-1);
+    }
+
+    if (event.key === "ArrowRight") {
+      changeImage(1);
+    }
+  });
+}
+
 function setupProductSwipe(gallery) {
   if (!gallery) return;
+
+  if (gallery.dataset.swipeReady === "true") return;
 
   const main = gallery.querySelector(".gallery-main");
   const thumbs = Array.from(gallery.querySelectorAll(".gallery-thumb"));
@@ -672,7 +825,6 @@ function setupAllProductSwipes() {
   document
     .querySelectorAll("#produtos .product-gallery")
     .forEach(function (gallery) {
-      gallery.dataset.swipeReady = "";
       setupProductSwipe(gallery);
     });
 }
@@ -698,6 +850,7 @@ function enableProductSwipes() {
 
 document.addEventListener("DOMContentLoaded", function () {
 
+  setupProductViewer();
   enableProductSwipes();
 
   const searchForm = document.querySelector(".header-search");
@@ -800,6 +953,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     src="${product.name === "iPhone 13 Pro Max" ? product.gallery.slice(0, 9)[0] : (product.gallery ? product.gallery[0] : product.colors[0].gallery[0])}"
                     alt="${product.name}"
                     class="gallery-main-image"
+                    onclick="abrirFotoProduto(this.closest('.product-gallery'))"
                     loading="lazy"
                   >
                 </div>
@@ -1899,6 +2053,207 @@ footer {
   background-attachment: fixed;
 }
 
+
+
+/* =========================================================
+   IPHONECENTER — BOTÕES DOS PRODUTOS / VISUAL MODERNO
+   Aplica somente aos 3 botões acima do WhatsApp
+   ========================================================= */
+
+.product-actions .product-button:not(.whatsapp-button) {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 46px !important;
+  padding: 11px 16px !important;
+  border: 1px solid #dedee3 !important;
+  border-radius: 13px !important;
+  background: #ffffff !important;
+  color: #1d1d1f !important;
+  font-size: 13px !important;
+  font-weight: 650 !important;
+  letter-spacing: -.1px !important;
+  line-height: 1.1 !important;
+  text-decoration: none !important;
+  box-shadow:
+    0 2px 5px rgba(0,0,0,.05),
+    inset 0 1px 0 rgba(255,255,255,.9) !important;
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    border-color .18s ease,
+    background .18s ease !important;
+  overflow: hidden !important;
+}
+
+/* Pequeno brilho interno */
+.product-actions .product-button:not(.whatsapp-button)::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,.75),
+    transparent 55%
+  ) !important;
+  pointer-events: none !important;
+}
+
+/* Interação no toque/mouse */
+.product-actions .product-button:not(.whatsapp-button):hover {
+  transform: translateY(-2px) !important;
+  border-color: #bfc0c5 !important;
+  background: #f8f8fa !important;
+  box-shadow:
+    0 7px 18px rgba(0,0,0,.09),
+    inset 0 1px 0 rgba(255,255,255,.95) !important;
+}
+
+.product-actions .product-button:not(.whatsapp-button):active {
+  transform: translateY(0) scale(.98) !important;
+  box-shadow: 0 2px 7px rgba(0,0,0,.08) !important;
+}
+
+/* Carrinho */
+.product-actions .cart-button {
+  border-color: #d7d7dc !important;
+}
+
+/* Consultar */
+.product-actions .product-button:not(.cart-button):not(.installment-button):not(.whatsapp-button) {
+  background: #f5f5f7 !important;
+}
+
+/* Parcelamento */
+.product-actions .installment-button {
+  background: #1d1d1f !important;
+  border-color: #1d1d1f !important;
+  color: #ffffff !important;
+  box-shadow:
+    0 4px 12px rgba(0,0,0,.14),
+    inset 0 1px 0 rgba(255,255,255,.08) !important;
+}
+
+.product-actions .installment-button:hover {
+  background: #2c2c2e !important;
+  border-color: #2c2c2e !important;
+}
+
+/* Mantém o WhatsApp independente */
+.product-actions .whatsapp-button {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .product-actions .product-button:not(.whatsapp-button) {
+    min-height: 44px !important;
+    border-radius: 12px !important;
+    padding: 10px 9px !important;
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .product-actions .product-button:not(.whatsapp-button) {
+    min-height: 42px !important;
+    border-radius: 11px !important;
+    padding: 9px 6px !important;
+    font-size: 11px !important;
+  }
+}
+
+
+/* IPHONECENTER — AJUSTE DO BOTÃO ADICIONAR AO CARRINHO */
+.product-actions .cart-button {
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 46px !important;
+  padding: 10px 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  line-height: 1.15 !important;
+  font-size: 12px !important;
+  letter-spacing: -0.15px !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 600px) {
+  .product-actions .cart-button {
+    min-height: 44px !important;
+    padding: 9px 8px !important;
+    font-size: 11.5px !important;
+  }
+}
+
+
+/* IPHONECENTER — CORREÇÃO DOS BOTÕES DOS PRODUTOS */
+.product-actions .product-button:not(.whatsapp-button) {
+  min-height: 48px !important;
+  height: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  padding: 9px 7px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  text-align: center !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  hyphens: none !important;
+
+  font-size: 12px !important;
+  font-weight: 650 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.15px !important;
+
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  text-overflow: clip !important;
+}
+
+.product-actions .cart-button {
+  font-size: 11px !important;
+  line-height: 1.15 !important;
+}
+
+.product-actions .installment-button {
+  font-size: 12px !important;
+  line-height: 1.15 !important;
+}
+
+/* Mantém os três botões organizados */
+.product-actions {
+  gap: 10px !important;
+}
+
+@media (max-width: 600px) {
+  .product-actions .product-button:not(.whatsapp-button) {
+    min-height: 46px !important;
+    padding: 8px 6px !important;
+    border-radius: 12px !important;
+  }
+
+  .product-actions .cart-button {
+    font-size: 10.5px !important;
+  }
+
+  .product-actions .installment-button {
+    min-height: 46px !important;
+    font-size: 11.5px !important;
+  }
+}
+
 </style>
 
 
@@ -2035,6 +2390,72 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+</script>
+
+
+<div id="productImageViewer" class="product-image-viewer" aria-hidden="true">
+  <button type="button" class="product-viewer-close" aria-label="Fechar">×</button>
+
+  <button type="button" class="product-viewer-prev" aria-label="Imagem anterior">‹</button>
+
+  <div class="product-viewer-content">
+    <img
+      id="productViewerImage"
+      src=""
+      alt="Imagem ampliada do produto"
+    >
+    <div id="productViewerCounter" class="product-viewer-counter">
+      1 / 1
+    </div>
+  </div>
+
+  <button type="button" class="product-viewer-next" aria-label="Próxima imagem">›</button>
+</div>
+
+
+<script>
+window.addEventListener("load", function () {
+  if (typeof setupProductViewer === "function") {
+    setupProductViewer();
+  }
+});
+</script>
+
+
+<script>
+function abrirFotoProduto(gallery) {
+  const viewer = document.getElementById("productImageViewer");
+  const viewerImage = document.getElementById("productViewerImage");
+
+  if (!viewer || !viewerImage || !gallery) return;
+
+  const mainImage = gallery.querySelector(".gallery-main-image");
+
+  if (!mainImage) return;
+
+  viewerImage.src = mainImage.src;
+  viewer._gallery = gallery;
+
+  viewer.classList.add("active");
+  viewer.setAttribute("aria-hidden", "false");
+  document.body.classList.add("product-viewer-open");
+}
+
+(function () {
+  document.addEventListener("click", function (event) {
+    const mainImage = event.target.closest(
+      "#produtos .gallery-main-image"
+    );
+
+    if (!mainImage) return;
+
+    const gallery = mainImage.closest(".product-gallery");
+
+    if (gallery) {
+      abrirFotoProduto(gallery);
+    }
+  });
+})();
 </script>
 
 </body>
