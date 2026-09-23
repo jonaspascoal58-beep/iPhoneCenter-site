@@ -1018,66 +1018,6 @@ window.products = [
     ]
   },
   {
-    "name": "iPhone 17 Air",
-    "image": "/assets/products/iphone16.png",
-    "status": "Lacrado",
-    "storages": [
-      {
-        "storage": "256 GB",
-        "price": "R$ 5.300,00"
-      },
-      {
-        "storage": "512 GB",
-        "price": "R$ 5.500,00"
-      }
-    ],
-    "description": "Apple iPhone 17 Pro - 256GB - Laranja, Azul Intenso e Prateado",
-    "colors": [
-      {
-        "name": "Laranja",
-        "gallery": [
-          "/assets/products/iphone17air/laranja/01.webp",
-          "/assets/products/iphone17air/laranja/02.webp",
-          "/assets/products/iphone17air/laranja/03.webp",
-          "/assets/products/iphone17air/laranja/04.webp",
-          "/assets/products/iphone17air/laranja/05.webp",
-          "/assets/products/iphone17air/laranja/06.webp",
-          "/assets/products/iphone17air/laranja/07.webp",
-          "/assets/products/iphone17air/laranja/08.webp",
-          "/assets/products/iphone17air/laranja/09.webp"
-        ]
-      },
-      {
-        "name": "Azul Intenso",
-        "gallery": [
-          "/assets/products/iphone17air/azul-intenso/01.webp",
-          "/assets/products/iphone17air/azul-intenso/02.webp",
-          "/assets/products/iphone17air/azul-intenso/03.webp",
-          "/assets/products/iphone17air/azul-intenso/04.webp",
-          "/assets/products/iphone17air/azul-intenso/05.webp",
-          "/assets/products/iphone17air/azul-intenso/06.webp",
-          "/assets/products/iphone17air/azul-intenso/07.webp",
-          "/assets/products/iphone17air/azul-intenso/08.webp",
-          "/assets/products/iphone17air/azul-intenso/09.webp"
-        ]
-      },
-      {
-        "name": "Prateado",
-        "gallery": [
-          "/assets/products/iphone17air/prateado/01.webp",
-          "/assets/products/iphone17air/prateado/02.webp",
-          "/assets/products/iphone17air/prateado/03.webp",
-          "/assets/products/iphone17air/prateado/04.webp",
-          "/assets/products/iphone17air/prateado/05.webp",
-          "/assets/products/iphone17air/prateado/06.webp",
-          "/assets/products/iphone17air/prateado/07.webp",
-          "/assets/products/iphone17air/prateado/08.webp",
-          "/assets/products/iphone17air/prateado/09.webp"
-        ]
-      }
-    ]
-  },
-  {
     "name": "iPhone 17 Pro",
     "image": "/assets/products/iphone16.png",
     "status": "Lacrado",
@@ -1093,6 +1033,51 @@ window.products = [
       {
         "storage": "1 TB",
         "price": "R$ 6.800,00"
+      }
+    ],
+    "description": "Apple iPhone 17 Pro - 256GB - Laranja, Azul Intenso e Prateado",
+    "colors": [
+      {
+        "name": "Laranja",
+        "gallery": [
+          "/assets/products/iphone17pro/laranja/01.webp",
+          "/assets/products/iphone17pro/laranja/02.webp",
+          "/assets/products/iphone17pro/laranja/03.webp",
+          "/assets/products/iphone17pro/laranja/04.webp",
+          "/assets/products/iphone17pro/laranja/05.webp",
+          "/assets/products/iphone17pro/laranja/06.webp",
+          "/assets/products/iphone17pro/laranja/07.webp",
+          "/assets/products/iphone17pro/laranja/08.webp",
+          "/assets/products/iphone17pro/laranja/09.webp"
+        ]
+      },
+      {
+        "name": "Azul Intenso",
+        "gallery": [
+          "/assets/products/iphone17pro/azul-intenso/01.webp",
+          "/assets/products/iphone17pro/azul-intenso/02.webp",
+          "/assets/products/iphone17pro/azul-intenso/03.webp",
+          "/assets/products/iphone17pro/azul-intenso/04.webp",
+          "/assets/products/iphone17pro/azul-intenso/05.webp",
+          "/assets/products/iphone17pro/azul-intenso/06.webp",
+          "/assets/products/iphone17pro/azul-intenso/07.webp",
+          "/assets/products/iphone17pro/azul-intenso/08.webp",
+          "/assets/products/iphone17pro/azul-intenso/09.webp"
+        ]
+      },
+      {
+        "name": "Prateado",
+        "gallery": [
+          "/assets/products/iphone17pro/prateado/01.webp",
+          "/assets/products/iphone17pro/prateado/02.webp",
+          "/assets/products/iphone17pro/prateado/03.webp",
+          "/assets/products/iphone17pro/prateado/04.webp",
+          "/assets/products/iphone17pro/prateado/05.webp",
+          "/assets/products/iphone17pro/prateado/06.webp",
+          "/assets/products/iphone17pro/prateado/07.webp",
+          "/assets/products/iphone17pro/prateado/08.webp",
+          "/assets/products/iphone17pro/prateado/09.webp"
+        ]
       }
     ]
   },
