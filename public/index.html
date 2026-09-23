@@ -592,6 +592,15 @@ function changeProductImage(button, imageUrl) {
 
   button.classList.add("active");
 
+  const thumbsContainer = gallery.querySelector(".gallery-thumbs");
+  if (thumbsContainer) {
+    button.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center"
+    });
+  }
+
   const index = thumbs.indexOf(button);
   if (index >= 0) {
     gallery.dataset.galleryIndex = String(index);
