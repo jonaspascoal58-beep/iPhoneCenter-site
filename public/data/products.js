@@ -706,7 +706,7 @@ window.products = [
         "price": "R$ 3.350,00"
       }
     ],
-    "description": "Apple iPhone 15 Pro - 128GB, 256GB e 512GB - Preto e Titânio natural",
+    "description": "Apple iPhone 15 Pro - 128GB, 256GB e 512 - Preto e Titânio natural",
     "colors": [
       {
         "name": "Preto",
@@ -748,7 +748,7 @@ window.products = [
         "price": "R$ 3.990,00"
       }
     ],
-    "description": "Apple iPhone 15 Pro Max - 256GB, 512GB e 1TB - Titânio Azul e Titânio Branco",
+    "description": "Apple iPhone 15 Pro max - 256GB, 512GB e 1TB - Titânio Azul e Titânio Branco",
     "colors": [
       {
         "name": "Titânio azul",
@@ -811,7 +811,7 @@ window.products = [
         "gallery": [
           "/assets/products/iphone16/rosa/01.webp",
           "/assets/products/iphone16/rosa/02.webp",
-          "/assets/products/iphone16/rosa/03.webp",
+          "/assets/products/iphone16/rosa/03.jpeg",
           "/assets/products/iphone16/rosa/04.webp",
           "/assets/products/iphone16/rosa/05.webp",
           "/assets/products/iphone16/rosa/06.webp",
@@ -825,7 +825,7 @@ window.products = [
         "gallery": [
           "/assets/products/iphone16/ultramarino/01.webp",
           "/assets/products/iphone16/ultramarino/02.webp",
-          "/assets/products/iphone16/ultramarino/03.webp",
+          "/assets/products/iphone16/ultramarino/03.jpeg",
           "/assets/products/iphone16/ultramarino/04.webp",
           "/assets/products/iphone16/ultramarino/05.webp",
           "/assets/products/iphone16/ultramarino/06.webp",
@@ -835,8 +835,7 @@ window.products = [
         ]
       },
       {
-        "name": "Preto",
-        "gallery": []
+        "name": "Preto"
       }
     ]
   },
@@ -865,7 +864,7 @@ window.products = [
         "gallery": [
           "/assets/products/iphone16plus/verde/01.webp",
           "/assets/products/iphone16plus/verde/02.webp",
-          "/assets/products/iphone16plus/verde/03.webp",
+          "/assets/products/iphone16plus/verde/03.jpeg",
           "/assets/products/iphone16plus/verde/04.webp",
           "/assets/products/iphone16plus/verde/05.webp",
           "/assets/products/iphone16plus/verde/06.webp",
@@ -898,7 +897,7 @@ window.products = [
         "price": "R$ 4.800,00"
       }
     ],
-    "description": "Apple iPhone 16 Pro - 128GB, 256GB, 512GB e 1TB - Titânio Preto",
+    "description": "Apple iPhone 16 Pro - 128GB, 256GB, 512GB E 1TB - Titânio Preto",
     "colors": [
       {
         "name": "Titânio Preto",
@@ -934,7 +933,7 @@ window.products = [
         "price": "R$ 4.990,00"
       }
     ],
-    "description": "Apple iPhone 16 Pro Max - 256GB, 512GB e 1TB - Titânio Deserto",
+    "description": "Apple iPhone 16 Pro Max - 256GB, 512GB e 1TB - Titanio Deserto",
     "colors": [
       {
         "name": "Titânio Deserto",
@@ -1015,6 +1014,37 @@ window.products = [
         "storage": "512 GB",
         "price": "R$ 5.450,00"
       }
+    ],
+    "description": "Apple iPhone 17 - 256GB e 512GB - Azul Intenso e Prateado",
+    "colors": [
+      {
+        "name": "Azul Intenso",
+        "gallery": [
+          "/assets/products/iphone17/azul-intenso/01.webp",
+          "/assets/products/iphone17/azul-intenso/02.webp",
+          "/assets/products/iphone17/azul-intenso/03.webp",
+          "/assets/products/iphone17/azul-intenso/04.webp",
+          "/assets/products/iphone17/azul-intenso/05.webp",
+          "/assets/products/iphone17/azul-intenso/06.webp",
+          "/assets/products/iphone17/azul-intenso/07.webp",
+          "/assets/products/iphone17/azul-intenso/08.webp",
+          "/assets/products/iphone17/azul-intenso/09.webp"
+        ]
+      },
+      {
+        "name": "Prateado",
+        "gallery": [
+          "/assets/products/iphone17/prateado/01.webp",
+          "/assets/products/iphone17/prateado/02.webp",
+          "/assets/products/iphone17/prateado/03.webp",
+          "/assets/products/iphone17/prateado/04.webp",
+          "/assets/products/iphone17/prateado/05.webp",
+          "/assets/products/iphone17/prateado/06.webp",
+          "/assets/products/iphone17/prateado/07.webp",
+          "/assets/products/iphone17/prateado/08.webp",
+          "/assets/products/iphone17/prateado/09.webp"
+        ]
+      }
     ]
   },
   {
@@ -1068,7 +1098,7 @@ window.products = [
       {
         "name": "Prateado",
         "gallery": [
-          "/assets/products/iphone17pro/prateado/01.webp",
+          "/assets/products/iphone17pro/prateado/01.jpeg",
           "/assets/products/iphone17pro/prateado/02.webp",
           "/assets/products/iphone17pro/prateado/03.webp",
           "/assets/products/iphone17pro/prateado/04.webp",
@@ -1143,9 +1173,3 @@ window.products = [
     ]
   }
 ];
-
-console.log(
-  "iPhoneCenter: catálogo agrupado:",
-  window.products.length,
-  "modelos"
-);
